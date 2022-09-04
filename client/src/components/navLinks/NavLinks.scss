@@ -1,0 +1,23 @@
+@use '../../partials/breakpoints' as *;
+@use '../../partials/colors' as *;
+@use '../../partials/textstyles' as *;
+@use '../../partials/typeface' as *;
+
+.navLinks {
+    &__container {
+        @include mobile {
+            display: none;
+        }
+    }
+    &__element {
+        padding: 40px 10px;
+        font-family: 'Josefin Sans Regular';
+        font-size: $h3_text_size_m;
+        text-decoration: none;
+        color: $lavender_blues;
+        @include desktop {
+            padding: 30px;
+            font-size: $h2_text_size_dt;  
+        }
+    }
+}
