@@ -1,0 +1,28 @@
+@use '../../partials/breakpoints' as *;
+@use '../../partials/colors' as *;
+@use '../../partials/textstyles' as *;
+@use '../../partials/typeface' as *;
+
+.navBar {
+    
+    &__section {
+        margin: 10px;
+        padding: 10px;
+        top: 0;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: sticky;
+        background-color: white;
+        font-family: 'Josefin Sans Regular';
+    }
+
+    &__center {
+        @include mobile {
+            display: none;
+        }
+    }
+
+
+}
