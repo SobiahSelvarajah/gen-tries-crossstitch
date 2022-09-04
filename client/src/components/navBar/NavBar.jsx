@@ -1,6 +1,7 @@
 import './NavBar.scss';
 import NavLogo from '../navLogo/NavLogo';
 import NavLinks from '../navLinks/NavLinks';
+import NavRight from '../navRight/NavRight';
 
 export default function NavBar() {
 
@@ -8,7 +9,7 @@ export default function NavBar() {
         <nav className='navBar__section'>
             <NavLogo />
             <NavLinks />
-            <div className='navBar__right'>a</div>
+            <NavRight />
         </nav>
     )
 }

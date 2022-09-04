@@ -1,0 +1,33 @@
+@use '../../partials/breakpoints' as *;
+@use '../../partials/colors' as *;
+@use '../../partials/textstyles' as *;
+@use '../../partials/typeface' as *;
+
+.navRight {
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__profile {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+        @include desktop {
+            width: 70px;
+            height: 70px;
+        }
+    }
+    &__search {
+        width: 15px;
+        height: 15px;
+        color: $lavender_blues;
+        margin-left: 15px;
+        @include desktop {
+            width: 20px;
+            height: 20px;
+            margin-left: 20px;
+        }
+    }
+}

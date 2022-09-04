@@ -4,13 +4,12 @@
 @use '../../partials/typeface' as *;
 
 .navLogo {
-
     &__element {
         padding-right: 20vw;
         width: 40vw;
         @include tablet {
             padding-right: 0;
-            width: 20vw;
+            width: 15vw;
         }
     }
 }
