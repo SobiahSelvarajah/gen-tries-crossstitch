@@ -1,0 +1,32 @@
+@use '../../partials/breakpoints' as *;
+@use '../../partials/colors' as *;
+@use '../../partials/textstyles' as *;
+@use '../../partials/typeface' as *;
+
+.headerTop {
+    &__container {
+        padding-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__text {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        font-family: 'Josefin Sans Light';
+        font-size: $h3_text_size_m;
+        color: $lavender_blues;
+        @include tablet {
+            padding-left: 30px;
+            font-size: $h1_text_size_m;
+        }
+        @include desktop {
+            padding-left: 80px;
+            font-size: $h1_text_size_dt;
+        }
+    }
+    &__image {
+        width: 60vw;
+    }
+}
