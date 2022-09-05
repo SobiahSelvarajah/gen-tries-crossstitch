@@ -27,6 +27,9 @@
         }
     }
     &__image {
-        width: 60vw;
+        width: 50vw;
+        @include tablet {
+            width: 60vw;
+        }
     }
 }
