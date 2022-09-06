@@ -3,6 +3,10 @@ import './BlogPosts.scss';
 
 export default function BlogPosts() {
   return (
-    <div>My Stitches</div>
+    <section className='blogPosts__container'>
+      <span className='blogPosts__heading'>
+        MY STITCHES
+      </span>
+    </section>
   )
 }

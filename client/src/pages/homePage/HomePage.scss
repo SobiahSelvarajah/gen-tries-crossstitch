@@ -3,8 +3,8 @@
 @use '../../partials/textstyles' as *;
 @use '../../partials/typeface' as *;
 
-.blogPosts {
+.homePage {
     &__container {
-        flex: 9;
+        display: flex;
     }
 }

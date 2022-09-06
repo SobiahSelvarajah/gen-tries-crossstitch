@@ -1,4 +1,5 @@
 import './Sidebar.scss';
+import gensPicture from '../../assets/gensPic.jpeg'
 
 export default function Sidebar() {
     return(
@@ -9,11 +10,12 @@ export default function Sidebar() {
                 </span>
                 <img
                     className='sidebar__image'
-                    src=''
+                    src={gensPicture}
                     alt='myPic' 
                 />
                 <p className='sidebar__description'>
-                    bjfdsjkfhsdkj
+                    Genevieve Williams
+                    Cross stitcher with a love for books.
                 </p>
             </div>
             <div className='sidebar__item'>
@@ -31,7 +33,7 @@ export default function Sidebar() {
                         Seasonal
                     </li>
                     <li className='sidebar__listItem'>
-                        Stitching Challenges
+                        Challenges
                     </li>
                 </ul>
             </div>

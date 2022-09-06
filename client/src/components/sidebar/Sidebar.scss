@@ -2,3 +2,58 @@
 @use '../../partials/colors' as *;
 @use '../../partials/textstyles' as *;
 @use '../../partials/typeface' as *;
+
+.sidebar {
+    &__container {
+        @include mobile {
+            display: none;
+        }
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        padding: 30px 0; 
+        border-radius: 10px;
+        background-color: $feather_grey;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__heading {
+        margin: 10px;
+        padding: 5px;
+        width: 80%;
+        border-top: 1px solid $soft_mint;
+        border-bottom: 1px solid $soft_mint;
+        font-family: 'Josefin Sans Light';
+        font-size: $h4_text_size_dt;
+        line-height: $h4_line_height_dt;
+        text-align: center;
+        color: $dark_violet;
+    }
+    &__image {
+        width: 10vw;
+    }
+    &__description {
+        margin-bottom: 20px;
+        font-family: 'Josefin Sans Regular';
+        font-size: $h4_text_size_dt;
+    }
+    &__list {
+        list-style: none;
+        margin-top: 0px;
+        margin-bottom: 10px;
+
+    }
+    &__listItem {
+        display: inline-block;
+        width: 50%;
+        margin: 15px;
+        font-family: 'Josefin Sans Regular';
+        font-size: $h4_text_size_dt;
+        text-align: start;
+    }
+}
