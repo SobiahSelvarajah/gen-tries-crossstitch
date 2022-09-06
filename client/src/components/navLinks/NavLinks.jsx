@@ -20,8 +20,8 @@ export default function NavLinks() {
             </a>
             <a 
                 className='navLinks__element'
-                href='/write'>
-                WRITE
+                href='/mystitches'>
+                MY STITCHES
             </a>
             <a 
                 className='navLinks__element'

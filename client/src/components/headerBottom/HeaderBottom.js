@@ -28,8 +28,8 @@ export default function HeaderBottom() {
                 </a>
                 <a 
                     className='headerBottom__element'
-                    href='/write'>
-                    WRITE
+                    href='/mystitches'>
+                    MY STITCHES
                 </a>
                 <a 
                     className='headerBottom__element'
