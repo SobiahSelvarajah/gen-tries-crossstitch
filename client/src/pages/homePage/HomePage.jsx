@@ -2,9 +2,10 @@ import React from "react";
 import NavBar from "../../components/navBar/NavBar";
 import HeroHeader from "../../components/heroHeader/HeroHeader";
 import Sidebar from "../../components/sidebar/Sidebar";
-import BlogPosts from "../../components/blogPosts/BlogPosts";
+import HomePagePosts from "../../components/homePagePosts/HomePagePosts";
 
 import './HomePage.scss';
+
 
 function HomePage() {
     return (
@@ -12,7 +13,7 @@ function HomePage() {
             <NavBar />
             <HeroHeader />
             <section className="homePage__container">
-                <BlogPosts />
+                <HomePagePosts />
                 <Sidebar />
             </section>
         </>
