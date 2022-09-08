@@ -9,6 +9,8 @@ export default function HomePagePosts() {
         MY STITCHES
       </span>
       <HomePagePost />
+      <HomePagePost />
+      <HomePagePost />
     </section>
   )
 }

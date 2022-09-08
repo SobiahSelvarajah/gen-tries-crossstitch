@@ -1,11 +1,12 @@
 import './HomePagePost.scss';
+import crossStitch from '../../assets/cross-stitch.jpg';
 
 export default function HomePagePost() {
   return (
     <section className='homePagePost__container'>
         <img
             className='homePagePost__image'
-            src=''
+            src={crossStitch}
             alt='postImage' 
         />
         <div className='homePagePost__info'>
@@ -17,14 +18,20 @@ export default function HomePagePost() {
                     Challenge
                 </span>
             </div>
-            <h2 className='homePagePost__heading'>
+            <span className='homePagePost__heading'>
                 Kittens
-            </h2>
+            </span>
             <hr></hr>
             <span className='homePagePost__date'>
                 2 hours ago
             </span>
         </div>
+        <p className='homePagePost__description'>
+            Starting a brand new day one stitch at a time.nhjdhksjsk fjhdfjskb sjhjkdf fskhfsjfd fjdhfkjs 
+            fdsjkhfjs fjkhdsj fsjhnfkjs jhsdkjf fkjsk fljkvj fkdjls asljnc jhfkdjf 
+            fsdkfjhsdkfsjd fkjkjfh sjkf fkjnf df sdf g h gd fs jhfkdjfnfjjd fdjkhgjkdf gjhdfn
+            ldjfgkfdh fdjhkdj jkdfj jkdgjkfd khkjssds fksjdhks ffjsk 
+        </p>
     </section>
   )
 }

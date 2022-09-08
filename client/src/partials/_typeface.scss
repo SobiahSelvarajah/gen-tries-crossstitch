@@ -4,7 +4,7 @@
     src: url('../assets/fonts/Petit_Formal_Script/PetitFormalScript-Regular.ttf') format('truetype');
 }
 
-// thin straight style
+// straight style
 @font-face {
     font-family: 'Josefin Sans Extra Light';
     src: url('../assets/fonts/Josefin_Sans/JosefinSans-ExtraLight.ttf') format('truetype');
@@ -18,4 +18,31 @@
 @font-face {
     font-family: 'Josefin Sans Regular';
     src: url('../assets/fonts/Josefin_Sans/JosefinSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Josefin Sans Medium';
+    src: url('../assets/fonts/Josefin_Sans/JosefinSans-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Josefin Sans Semi Bold';
+    src: url('../assets/fonts/Josefin_Sans/JosefinSans-SemiBold.ttf') format('truetype');
+}
+
+//  italic style
+
+@font-face {
+    font-family: 'Josefin Sans Extra Light Italic';
+    src: url('../assets/fonts/Josefin_Sans/JosefinSans-ExtraLightItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Josefin Sans Light Italic';
+    src: url('../assets/fonts/Josefin_Sans/JosefinSans-LightItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Josefin Sans Regular Italic';
+    src: url('../assets/fonts/Josefin_Sans/JosefinSans-Italic.ttf') format('truetype');
 }
