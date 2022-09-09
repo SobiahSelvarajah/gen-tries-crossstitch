@@ -6,5 +6,10 @@
 .homePagePosts {
     &__container {
         flex: 9;
+        display: flex;
+        flex-wrap: wrap;
+        @include tablet {
+            justify-content: center;
+        }
     }
 }
