@@ -44,6 +44,9 @@
     }
     &__category {
         margin-right: 10px;
+        @include tablet {
+            margin: 0 5px;   
+        }
     }
     &__heading {
         margin-top: 15px;

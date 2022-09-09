@@ -5,15 +5,19 @@ import './HomePagePosts.scss';
 export default function HomePagePosts() {
   return (
     <section className='homePagePosts__container'>
-      {/* <span className='hoemPagePosts__heading'>
-        MY STITCHES
-      </span> */}
-      <HomePagePost />
-      <HomePagePost />
-      <HomePagePost />
-      <HomePagePost />
-      <HomePagePost />
-      <HomePagePost />
+      <div className='homePagePosts__headingPart'>
+        <span className='homePagePosts__heading'>
+          My Stitches
+        </span>        
+      </div>
+      <div className='homePagePosts__posts'>
+        <HomePagePost />
+        <HomePagePost />
+        <HomePagePost />
+        <HomePagePost />
+        <HomePagePost />
+        <HomePagePost />        
+      </div>
     </section>
   )
 }

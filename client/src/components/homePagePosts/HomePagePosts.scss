@@ -4,7 +4,25 @@
 @use '../../partials/typeface' as *;
 
 .homePagePosts {
-    &__container {
+    &__headingPart {
+        font-family: 'Josefin Sans Light';
+        font-size: $h1_text_size_m;
+        margin: 80px 0;
+        display: flex;
+        justify-content: center;
+        background-color: $pale_lavender;
+        line-height: 70px;
+        @include tablet {
+            margin: 20px 0 60px 0;
+            line-height: 100px;
+        }
+        @include desktop {
+            font-size: $h1_text_size_dt;
+            line-height: 150px;
+            margin-bottom: 100px;
+        }
+    }
+    &__posts {
         flex: 9;
         display: flex;
         flex-wrap: wrap;
