@@ -3,6 +3,8 @@ import crossStitch from '../../assets/cross-stitch.jpg';
 import editIcon from '../../assets/icons/edit.svg';
 import deleteIcon from '../../assets/icons/delete.svg'; 
 
+import './SinglePost.scss';
+
 export default function SinglePost() {
   return (
     <section className='singlePost__container'>
