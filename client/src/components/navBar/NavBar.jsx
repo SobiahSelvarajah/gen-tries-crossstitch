@@ -4,7 +4,6 @@ import NavLinks from '../navLinks/NavLinks';
 import NavRight from '../navRight/NavRight';
 
 export default function NavBar() {
-
     return (
         <nav className='navBar__section'>
             <NavLogo />

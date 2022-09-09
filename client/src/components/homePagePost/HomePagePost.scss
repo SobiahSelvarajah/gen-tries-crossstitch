@@ -4,7 +4,6 @@
 @use '../../partials/typeface' as *;
 
 .homePagePost {
-
     &__container {
         margin: 0 50px 60px 50px;         
         @include tablet {
@@ -16,7 +15,6 @@
             margin: 0 60px 80px 60px;
         }
     }
-
     &__image {
         width: 100%;
         height: 200px;
@@ -26,7 +24,6 @@
             height: 360px;
         }
     }
-
     &__info {
         display: flex;
         flex-direction: column;
@@ -34,7 +31,6 @@
             align-items: center;
         }
     }
-    
     &__categories {
         margin: 15px 10px 0 0;
         font-family: 'Josefin Sans Regular';
@@ -46,11 +42,9 @@
             line-height: $h5_line_height_dt;
         }
     }
-    
     &__category {
         margin-right: 10px;
     }
-    
     &__heading {
         margin-top: 15px;
         font-family: 'Josefin Sans Semi Bold';
@@ -61,7 +55,6 @@
             font-size: $h2_text_size_dt;
         }
     }
-    
     &__date {
         margin-top: 0px;
         font-family: 'Josefin Sans Light Italic';
@@ -71,7 +64,6 @@
             font-size: $h5_text_size_dt;
         }
     }
-
     &__description {
         margin-top: 15px;
         font-family: 'Josefin Sans Regular';
