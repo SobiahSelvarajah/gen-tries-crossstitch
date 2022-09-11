@@ -6,46 +6,41 @@ import deleteIcon from '../../assets/icons/delete.svg';
 import './SinglePost.scss';
 
 export default function SinglePost() {
-  return (
-    <section className='singlePost__container'>
-        <div className='singlePost__wrapper'>
-            <img
+    return(
+        <main className='singlePost__container'>
+            <img 
                 className='singlePost__image'
                 src={crossStitch}
-                alt='postImage' 
+                alt='blogPostImage'
             />
-        </div>
-        <h1 className='singLePost__heading'>
-            Kittens
-            <div className='singlePost__editIcons'>
-                <img 
-                    className='singlePost__edit'
-                    src={editIcon}
-                    alt='postEdit'
-                />
-                <img 
-                    className='singlePost__delete'
-                    src={deleteIcon}
-                    alt='postDelete'
-                />
-            </div>
-        </h1>
-        <div className='singlePost__info'>
-            <span className='singlePost__author'>
-                Author: <b>Genevieve</b>
-            </span>
-            <span className='singlePost__date'>
-                2 hours ago
-            </span>
-        </div>
-        <p className='singlePost__description'>
-            jhfsj fshsdjk fjkhdkjfh fsjhfjkd fdshk 
-            dshskdhs fshfksjhfs fskhfskn sdfhskhfksdjs 
-            sdkfhsdkjf sdfhsdkjfhsdbf sdfsdhksbsdnbfjsfs
-            nkjfk f g ss sdf fwjk fwfw fwnfkwfjdoihhfr rjh
-            jhfguhsfwejnfew fjhkjsfn wfkjk fnfkn dfksdjflk sf
-            fewh fjd ipoy yjg jfhnjwe wniwj 
-        </p>
-    </section>
-  )
+            <section className='singlePost__headingContainer'>
+                <h1 className='singlePost__heading'>
+                    Kittens
+                </h1>
+                <div className='singlePost__editIcons'>
+                    <img 
+                        className='singlePost__editIcon'
+                        src={editIcon}
+                        alt='editIcon'
+                    />
+                    <img 
+                        className='singlePost__deleteIcon'
+                        src={deleteIcon}
+                        alt='deleteIcon'
+                    />
+                </div>
+            </section>
+            <section className='singlePost__info'>
+                <h4 className='singlePost__author'>
+                    Genevieve
+                </h4>
+                <span className='singlePost__date'>
+                    2 hours ago
+                </span>
+            </section>
+            <p className='singlePost__description'>
+                jfkdj dsjhfdsjk dkjshjksh
+            </p>
+        </main>
+    )
 }
