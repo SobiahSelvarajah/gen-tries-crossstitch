@@ -5,6 +5,86 @@
 
 .singlePost {
     &__container {
-        flex: 9;
+        font-family: 'Josefin Sans Light';
+        @include tablet {
+            flex: 9;
+            margin-top: 20px;
+        }
+    }
+    &__image {
+        width: 100%;
+        object-fit: cover;
+        @include tablet {
+            border-radius: 0 50px 50px 0;
+        }
+    }
+    &__textWrap {
+        margin: 10px 20px;
+        @include tablet {
+            margin: 10px 50px;
+        }
+    }
+    &__headingContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__heading {
+        font-family: 'Josefin Sans Medium';
+        font-size: $h1_text_size_m;
+        color: $soft_mint;
+        @include tablet {
+            font-size: $h1_text_size_dt;
+            margin-bottom: 35px;
+        }
+    }
+    &__editIcons {
+        display: flex;
+        flex-direction: row;
+    }
+    &__editIcon,
+    &__deleteIcon {
+        width: 100%;
+        height: 15px;
+        @include tablet {
+            height: 20px;
+        }
+    }
+    &__editIcon {
+        margin-right: 10px;
+        @include tablet {
+            margin-right: 20px;
+        }
+    }
+    &__info {
+        margin-bottom: 30px;
+    }
+    &__author {
+        margin: 0 0 5px 0;
+        font-size: $h3_text_size_m;
+        color: $lavender_blues;
+        @include tablet {
+            font-size: 0 0 10px 0;
+            font-size: $h3_text_size_dt;
+        }
+    }
+    &__date {
+        font-family: 'Josefin Sans Regular';
+        font-size: $h5_text_size_m;
+        color: $lavender_blues;
+        @include tablet {
+            font-size: $h5_text_size_dt;
+        }
+    }
+    &__description {
+        font-family: 'Josefin Sans Regular';
+        font-size: $h3_text_size_m;
+        line-height: $h4_line_height_dt;
+        color: $lavender_blues;
+        @include tablet {
+            font-size: $h3_text_size_dt;
+            line-height: $h3_line_height_dt;
+        }
     }
 }
