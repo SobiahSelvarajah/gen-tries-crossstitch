@@ -27,10 +27,10 @@ export default function HomePagePost() {
             </span>
         </section>
         <p className='homePagePost__description'>
-            Starting a brand new day one stitch at a time.nhjdhksjsk fjhdfjskb sjhjkdf fskhfsjfd fjdhfkjs 
-            fdsjkhfjs fjkhdsj fsjhnfkjs jhsdkjf fkjsk fljkvj fkdjls asljnc jhfkdjf 
-            fsdkfjhsdkfsjd fkjkjfh sjkf fkjnf df sdf g h gd fs jhfkdjfnfjjd fdjkhgjkdf gjhdfn
-            ldjfgkfdh fdjhkdj jkdfj jkdgjkfd khkjssds fksjdhks ffjsk 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Totam reiciendis ipsum quasi, odio eum veritatis iste eveniet 
+            magnam labore quas eligendi nesciunt dignissimos vel dolores 
+            at. Modi praesentium blanditiis accusantium!
         </p>
     </article>
   )

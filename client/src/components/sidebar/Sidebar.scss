@@ -12,48 +12,98 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
         margin: 20px;
-        padding: 30px 0; 
         border-radius: 10px;
+        color: $quick_silver;
+        @include desktop {
+            margin: 40px;
+        }
+    }
+    &__containerWrapper {
         background-color: $feather_grey;
     }
     &__item {
+        margin-top: 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        @include desktop {
+            margin-top: 40px;
+        }
     }
     &__heading {
         margin: 10px;
         padding: 5px;
         width: 80%;
-        border-top: 1px solid $soft_mint;
-        border-bottom: 1px solid $soft_mint;
+        border-top: 1px solid $dark_mint;
+        border-bottom: 1px solid $dark_mint;
         font-family: 'Josefin Sans Light';
-        font-size: $h4_text_size_dt;
-        line-height: $h4_line_height_dt;
+        font-size: $h4_text_size_m;
+        line-height: $h4_line_height_m;
         text-align: center;
-        color: $dark_violet;
+        color: $lavender_blues;
+        @include desktop {
+            padding: 20px;
+            width: 70%;
+            font-size: $h4_text_size_dt;
+            line-height: $h4_line_height_dt;
+        }
     }
     &__image {
+        margin-top: 10px;
         width: 10vw;
+        @include desktop {
+            margin-top: 20px;
+        }
     }
     &__description {
-        margin-bottom: 20px;
+        margin: 15px 15px 0 15px;
         font-family: 'Josefin Sans Regular';
-        font-size: $h4_text_size_dt;
+        font-size: $h4_text_size_m;
+        line-height: $h4_line_height_m;
+        @include desktop {
+            font-size: $h4_text_size_dt;
+        }
     }
     &__list {
         list-style: none;
-        margin-top: 0px;
-        margin-bottom: 10px;
-
+        margin: 0 15px 15px 15px;
+        padding: 0;
+        @include desktop {
+            margin: 0 60px 20px 60px;
+        }
     }
     &__listItem {
         display: inline-block;
         width: 50%;
-        margin: 15px;
+        margin: 10px 0 15px 0;
         font-family: 'Josefin Sans Regular';
-        font-size: $h4_text_size_dt;
+        font-size: $h4_text_size_m;
         text-align: start;
+        @include desktop {
+            font-size: $h4_text_size_dt;
+        }
+    }
+    &__socials {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__socialLink {
+        margin: 20px 0;
+        text-decoration: none;
+    }
+    &__socialIcon {
+        width: 3vw;
+    }
+    &__socialName {
+        margin-top: 10px;
+        font-family: 'Josefin Sans Light';
+        font-size: $h4_text_size_m;
+        color: $quick_silver;
+        @include desktop {
+            font-size: $h4_text_size_dt;
+        }
     }
 }
