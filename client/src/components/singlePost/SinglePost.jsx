@@ -8,11 +8,13 @@ import './SinglePost.scss';
 export default function SinglePost() {
     return(
         <main className='singlePost__container'>
-            <img 
-                className='singlePost__image'
-                src={crossStitch}
-                alt='blogPostImage'
-            />
+            <div className='singlePost__imageContainer'>
+                <img 
+                    className='singlePost__image'
+                    src={crossStitch}
+                    alt='blogPostImage'
+                />
+            </div>
             <article className='singlePost__textWrap'>
                 <section className='singlePost__headingContainer'>
                     <h1 className='singlePost__heading'>
@@ -40,7 +42,10 @@ export default function SinglePost() {
                     </span>
                 </section>
                 <p className='singlePost__description'>
-                    jfkdj dsjhfdsjk dkjshjksh
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Totam reiciendis ipsum quasi, odio eum veritatis iste eveniet 
+                    magnam labore quas eligendi nesciunt dignissimos vel dolores 
+                    at. Modi praesentium blanditiis accusantium!
                 </p>
             </article>
         </main>

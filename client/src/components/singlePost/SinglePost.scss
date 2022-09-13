@@ -6,9 +6,19 @@
 .singlePost {
     &__container {
         font-family: 'Josefin Sans Light';
+        margin-top: 10px;
         @include tablet {
             flex: 9;
             margin-top: 20px;
+        }
+        @include desktop {
+            margin-top: 40px;
+        }
+    }
+    &__imageContainer {
+        @include desktop {
+            display: flex;
+            justify-content: center;
         }
     }
     &__image {
@@ -17,11 +27,18 @@
         @include tablet {
             border-radius: 0 50px 50px 0;
         }
+        @include desktop {
+            width: 60%;
+            border-radius: 50px;
+        }
     }
     &__textWrap {
         margin: 10px 20px;
         @include tablet {
             margin: 10px 50px;
+        }
+        @include desktop {
+            text-align: center;
         }
     }
     &__headingContainer {
@@ -29,6 +46,9 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        @include desktop {
+            justify-content: space-around;
+        }
     }
     &__heading {
         font-family: 'Josefin Sans Medium';
@@ -59,6 +79,9 @@
     }
     &__info {
         margin-bottom: 30px;
+        @include desktop {
+            margin-bottom: 35px;
+        }
     }
     &__author {
         margin: 0 0 5px 0;
