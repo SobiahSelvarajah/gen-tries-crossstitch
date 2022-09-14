@@ -1,23 +1,22 @@
 import React from 'react';
-// import plusIcon from '../../assets/icons/plus-solid.svg';
-// import crossStitch from '../../assets/cross-stitch.jpg';
+import crossStitch from '../../assets/cross-stitch.jpg';
+
+import './PublishPost.scss';
 
 export default function PublishPost() {
   return (
     <section className='publishPost__container'>
         <img 
             className='publishPost__image'
-            src=''
+            src={crossStitch}
             alt='postImage'
         />
         <form className='publishPost__form'>
             <div className='publishPost__inputContainer'>
                 <label htmlFor='fileInput'>
-                    <img 
-                        className='publishPost__plusIcon'
-                        src=''
-                        alt='plusIcon'
-                    />
+                    <span className='publishPost__plusIcon'>
+                        +
+                    </span>
                 </label>
                 <input 
                     className='publishPost__fileInput'

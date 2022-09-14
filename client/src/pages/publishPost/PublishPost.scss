@@ -1,0 +1,68 @@
+@use '../../partials/breakpoints' as *;
+@use '../../partials/colors' as *;
+@use '../../partials/textstyles' as *;
+@use '../../partials/typeface' as *;
+
+.publishPost {
+    &__container {
+        font-family: 'Josefin Sans Light';
+        margin-top: 10px;
+    }
+    &__image {
+        width: 100%;
+        object-fit: cover;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__inputContainer {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+    }
+    &__plusIcon {
+        width: 10px;
+        height: 10px;
+        color: $dark_mint;
+        text-align: center;
+        font-size: $h1_text_size_m;
+        cursor: pointer;
+    }
+    &__titleInput,
+    &__textInput {
+        font-family: 'Josefin Sans Light';
+        padding: 10px;
+        border: 1px solid $bluebell;
+        border-radius: 10px;   
+    }
+    &__titleInput:focus,
+    &__textInput:focus {
+        outline: $lavender_blues solid 1px;
+    }
+    &__titleInput {
+        margin-left: 10px;
+        font-size: $h2_text_size_m;
+        line-height: $h2_line_height_m;
+        width: 60vw;
+        color: $quick_silver;
+    }
+    &__textInput {
+        width: 70vw;
+        height: 20vh;
+        resize: none;
+        font-size: $h4_text_size_m;
+        line-height: $h4_line_height_m;
+    }
+    &__submit {
+        margin-top: 50px;
+        padding: 20px 30px;
+        border: none;
+        border-radius: 10px;
+        background-color: $bluebell;
+        font-family: 'Josefin Sans Semi Bold';
+        font-size: $h3_text_size_m;
+        color: $white;
+    }
+}
