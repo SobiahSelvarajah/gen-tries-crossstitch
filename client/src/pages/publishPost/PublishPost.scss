@@ -7,20 +7,45 @@
     &__container {
         font-family: 'Josefin Sans Light';
         margin-top: 10px;
+        @include tablet {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        @include desktop {
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 0;
+        }
     }
     &__image {
         width: 100%;
         object-fit: cover;
+        @include tablet {
+            width: 60%;
+            border-radius: 20px;
+        }
+        @include desktop {
+            margin: 0 50px;
+            width: 40%;
+        }
     }
     &__form {
         display: flex;
         flex-direction: column;
         align-items: center;
+        @include desktop {
+            margin: 40px 60px 0px 0px; 
+        }
     }
     &__inputContainer {
         margin-top: 30px;
         display: flex;
         align-items: center;
+        @include tablet {
+            margin-top: 40px;
+        }
     }
     &__plusIcon {
         width: 10px;
@@ -29,6 +54,9 @@
         text-align: center;
         font-size: $h1_text_size_m;
         cursor: pointer;
+        @include tablet {
+            font-size: $h1_text_size_dt;
+        }
     }
     &__titleInput,
     &__textInput {
@@ -36,6 +64,10 @@
         padding: 10px;
         border: 1px solid $bluebell;
         border-radius: 10px;   
+        @include tablet {
+            padding: 20px;
+            border-radius: 20px;
+        }
     }
     &__titleInput:focus,
     &__textInput:focus {
@@ -47,6 +79,15 @@
         line-height: $h2_line_height_m;
         width: 60vw;
         color: $quick_silver;
+        @include tablet {
+            margin-left: 20px;
+            font-size: $h2_text_size_dt;
+            line-height: $h2_line_height_dt;
+            width: 30vw;
+        }
+        @include desktop {
+            width: 20vw;
+        }
     }
     &__textInput {
         width: 70vw;
@@ -54,9 +95,16 @@
         resize: none;
         font-size: $h4_text_size_m;
         line-height: $h4_line_height_m;
+        @include tablet {
+            font-size: $h4_text_size_dt;
+            line-height: $h4_line_height_dt;
+        }
+        @include desktop {
+            width: 35vw;
+        }
     }
     &__submit {
-        margin-top: 50px;
+        margin: 50px 0;
         padding: 20px 30px;
         border: none;
         border-radius: 10px;
@@ -64,5 +112,10 @@
         font-family: 'Josefin Sans Semi Bold';
         font-size: $h3_text_size_m;
         color: $white;
+        @include tablet {
+            padding: 30px 40px;
+            border-radius: 20px;
+            font-size: $h3_text_size_dt;
+        }
     }
 }
