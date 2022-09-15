@@ -5,6 +5,8 @@ import NavBar from './components/navBar/NavBar';
 // import SinglePostPage from './pages/singlePostPage/SinglePostPage';
 // import PublishPost from './pages/publishPost/PublishPost';
 import AccountSettings from './pages/accountSetting/AccountSettings';
+import Login from './pages/login/Login';
+
 
 const App = () => {
   return(
@@ -13,7 +15,8 @@ const App = () => {
       {/* <HomePage /> */}
       {/* <SinglePostPage /> */}
       {/* <PublishPost /> */}
-      <AccountSettings />
+      {/* <AccountSettings /> */}
+      <Login />
     </>
   )
 }
