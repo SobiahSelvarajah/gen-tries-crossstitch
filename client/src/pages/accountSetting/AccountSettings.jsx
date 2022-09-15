@@ -1,4 +1,8 @@
 import React from 'react';
+import profilePic from '../../assets/gensProfile.jpg';
+import userIcon from '../../assets/icons/user-solid.svg';
+
+import './AccountSettings.scss';
 
 export default function AccountSettings() {
   return (
@@ -14,18 +18,18 @@ export default function AccountSettings() {
             </section>
             <form className='accountSettings__form'>
                 <label className='accountSettings__profilePic'>
-                    Profile Picture
+                    Profile Picture:
                 </label>
                 <div className='accountSettings__profilePicContainer'>
                     <img
                         className='accountSettings__currentPic'
-                        src=''
+                        src={profilePic}
                         alt='currentPic'
                     />
                     <label htmlFor='fileInput'>
                         <img
                             className='accountSettings__userIcon'
-                            src=''
+                            src={userIcon}
                             alt='userIcon'
                         />
                     </label>
@@ -40,7 +44,7 @@ export default function AccountSettings() {
                     Username:
                 </label>
                 <input 
-                    className='accountSettings__username'
+                    className='accountSettings__infoInput'
                     type='text' 
                     placeholder='Genevieve' 
                 />
@@ -48,7 +52,7 @@ export default function AccountSettings() {
                     Email:
                 </label>
                 <input
-                    className='accountSettings__userEmail'
+                    className='accountSettings__infoInput'
                     type='email'
                     placeholder='genevievewilliams@hotmail.com'
                 />
@@ -56,7 +60,7 @@ export default function AccountSettings() {
                     Password:
                 </label>
                 <input
-                    className='accountSettings__password'
+                    className='accountSettings__infoInput'
                     type='password'
                 />
                 <button className='accountSettings__updateButton'>

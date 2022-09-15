@@ -118,4 +118,9 @@
             font-size: $h3_text_size_dt;
         }
     }
+    &__submit:hover {
+        background-color: $white;
+        color: $bluebell;
+        transition: 0.5s;
+    }
 }

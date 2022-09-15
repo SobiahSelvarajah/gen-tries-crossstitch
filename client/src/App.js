@@ -3,7 +3,7 @@ import React from 'react';
 import NavBar from './components/navBar/NavBar';
 // import HomePage from './pages/homePage/HomePage';
 // import SinglePostPage from './pages/singlePostPage/SinglePostPage';
-// import PublishPost from './pages/publishPost/PublishPost';
+import PublishPost from './pages/publishPost/PublishPost';
 import AccountSettings from './pages/accountSetting/AccountSettings';
 
 const App = () => {
@@ -12,7 +12,7 @@ const App = () => {
       <NavBar />
       {/* <HomePage /> */}
       {/* <SinglePostPage /> */}
-      {/* <PublishPost /> */}
+      <PublishPost />
       <AccountSettings />
     </>
   )

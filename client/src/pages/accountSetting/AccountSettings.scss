@@ -1,0 +1,93 @@
+@use '../../partials/breakpoints' as *;
+@use '../../partials/colors' as *;
+@use '../../partials/textstyles' as *;
+@use '../../partials/typeface' as *;
+
+.accountSettings {
+    &__container {
+        margin: 30px;
+        font-family: 'Josefin Sans Light';
+    }
+    &__containerWrapper {
+
+    }
+    &__mainHeading {
+        display: flex;
+        flex-direction: column;
+        @include tablet {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;            
+        }
+
+    }
+    &__updateHeading {
+        font-size: $h1_text_size_m;
+        color: $bluebell;
+    }
+    &__deleteHeading {
+        font-size: $h4_text_size_m;
+        color: red;
+    }
+    &__form {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__profilePic {
+        
+    }
+    &__profilePicContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    &__currentPic {
+        padding: 20px;
+        width: 40vw;
+    }
+    &__userIcon {
+        padding: 20px;
+        width: 20px;
+        height: 20px;
+    }
+    &__fileInput {
+
+    }
+    &__userInfo {
+        margin: 40px 0 10px 0;
+    }
+    &__infoInput {
+        padding: 10px;
+        border: 1px solid $bluebell;
+        border-radius: 10px;   
+        @include tablet {
+            padding: 20px;
+            border-radius: 20px;
+        }
+    }
+    &__infoInput:focus {
+        outline: $lavender_blues solid 1px;
+    }
+    &__updateButton {
+        margin: 50px 0;
+        padding: 20px 30px;
+        border: none;
+        border-radius: 10px;
+        background-color: $bluebell;
+        font-family: 'Josefin Sans Semi Bold';
+        font-size: $h3_text_size_m;
+        color: $white;
+        @include tablet {
+            padding: 30px 40px;
+            border-radius: 20px;
+            font-size: $h3_text_size_dt;
+        }
+    }
+    &__updateButton:hover {
+        background-color: $white;
+        color: $bluebell;
+        transition: 0.5s;
+    }
+}
