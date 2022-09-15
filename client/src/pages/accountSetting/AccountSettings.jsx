@@ -7,39 +7,39 @@ import './AccountSettings.scss';
 export default function AccountSettings() {
   return (
     <article className='accountSettings__container'>
-        <div className='accountSettings__containerWrapper'>
-            <section className='accountSettings__mainHeading'>
-                <h1 className='accountSettings__updateHeading'>
-                    Update Your Account
-                </h1>
-                <h5 className='accountSettings__deleteHeading'>
-                    Delete Your Account
-                </h5>
-            </section>
-            <form className='accountSettings__form'>
-                <label className='accountSettings__profilePic'>
-                    Profile Picture:
-                </label>
-                <div className='accountSettings__profilePicContainer'>
+        <section className='accountSettings__mainHeading'>
+            <h1 className='accountSettings__updateHeading'>
+                Update Your Account
+            </h1>
+            <h5 className='accountSettings__deleteHeading'>
+                Delete Your Account
+            </h5>
+        </section>
+        <form className='accountSettings__form'>
+            <label className='accountSettings__profilePic'>
+                Profile Picture:
+            </label>
+            <div className='accountSettings__profilePicContainer'>
+                <img
+                    className='accountSettings__currentPic'
+                    src={profilePic}
+                    alt='currentPic'
+                />
+                <label htmlFor='fileInput'>
                     <img
-                        className='accountSettings__currentPic'
-                        src={profilePic}
-                        alt='currentPic'
+                        className='accountSettings__userIcon'
+                        src={userIcon}
+                        alt='userIcon'
                     />
-                    <label htmlFor='fileInput'>
-                        <img
-                            className='accountSettings__userIcon'
-                            src={userIcon}
-                            alt='userIcon'
-                        />
-                    </label>
-                    <input 
-                        className='accountSettings__fileInput'
-                        id='fileInput'
-                        type='file'
-                        style={{display:'none'}}
-                    />
-                </div>
+                </label>
+                <input 
+                    className='accountSettings__fileInput'
+                    id='fileInput'
+                    type='file'
+                    style={{display:'none'}}
+                />
+            </div>
+            <div className='accountSettings__infoContainer'>
                 <label className='accountSettings__userInfo'>
                     Username:
                 </label>
@@ -66,8 +66,8 @@ export default function AccountSettings() {
                 <button className='accountSettings__updateButton'>
                     Update
                 </button>
-            </form>
-        </div>
+            </div>
+        </form>
     </article>
   )
 }

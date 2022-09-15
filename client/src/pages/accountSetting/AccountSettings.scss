@@ -7,9 +7,9 @@
     &__container {
         margin: 30px;
         font-family: 'Josefin Sans Light';
-    }
-    &__containerWrapper {
-
+        @include tablet {
+            margin: 60px;
+        }
     }
     &__mainHeading {
         display: flex;
@@ -19,23 +19,32 @@
             justify-content: space-between;
             align-items: center;            
         }
-
     }
     &__updateHeading {
         font-size: $h1_text_size_m;
         color: $bluebell;
+        @include tablet {
+            font-size: $h1_text_size_dt;
+        }
     }
     &__deleteHeading {
-        font-size: $h4_text_size_m;
+        font-size: $h5_text_size_m;
         color: red;
+        @include tablet {
+            font-size: $h5_text_size_dt;
+        }
     }
     &__form {
         margin-top: 20px;
-        display: flex;
-        flex-direction: column;
+        @include desktop {
+            margin-top: 40px;
+        }
     }
     &__profilePic {
-        
+        font-size: $h3_text_size_m;
+        @include tablet {
+            font-size: $h3_text_size_dt;
+        }
     }
     &__profilePicContainer {
         display: flex;
@@ -46,25 +55,56 @@
     &__currentPic {
         padding: 20px;
         width: 40vw;
+        @include tablet {
+            width: 25vw;
+        }
+        @include desktop {
+            padding-right: 30px;
+            width: 15vw;
+        }
     }
     &__userIcon {
         padding: 20px;
         width: 20px;
         height: 20px;
+        border-radius: 20vw;
+        background-color: $pale_lavender;
     }
-    &__fileInput {
-
+    &__infoContainer {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        @include tablet {
+            margin-top: 0;
+        }
+        @include desktop {
+            align-items: center;
+        }
     }
     &__userInfo {
         margin: 40px 0 10px 0;
+        font-size: $h3_text_size_m;
+        @include tablet {
+            margin: 50px 0 15px 0;
+            font-size: $h3_text_size_dt;
+        }
+        @include desktop {
+            margin: 60px 0 20px 0;
+        }
     }
     &__infoInput {
         padding: 10px;
+        font-size: $h4_text_size_m;
         border: 1px solid $bluebell;
         border-radius: 10px;   
         @include tablet {
             padding: 20px;
             border-radius: 20px;
+            font-size: $h4_text_size_dt;
+        }
+        @include desktop {
+            width: 30vw;
+            text-align: center;
         }
     }
     &__infoInput:focus {
@@ -83,6 +123,10 @@
             padding: 30px 40px;
             border-radius: 20px;
             font-size: $h3_text_size_dt;
+            width: 30vw;
+        }
+        @include desktop {
+            width: 15vw;
         }
     }
     &__updateButton:hover {
