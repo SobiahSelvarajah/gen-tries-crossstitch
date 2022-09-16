@@ -1,0 +1,110 @@
+@use '../../partials/breakpoints' as *;
+@use '../../partials/colors' as *;
+@use '../../partials/textstyles' as *;
+@use '../../partials/typeface' as *;
+
+.login {
+    &__container {
+        height: calc(100vh - 50px);
+        background: linear-gradient(
+            rgba(255,255,255,0.2),
+            rgba(255,255,255,0.2)),
+            url('https://images.unsplash.com/photo-1557761830-8d36eedd1718?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80');
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Josefin Sans Regular';
+    }
+    &__containerWrapper {
+        margin: 80px 40px 0 40px;
+        @include tablet {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+    &__heading {
+        font-size: $h1_text_size_m;
+        @include tablet {
+            font-size: $h1_text_size_dt;
+        }
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;   
+        @include tablet {
+            align-items: center;
+        }
+    }
+    &__userInfo {
+        margin: 50px 0 10px 0;
+        font-size: $h3_text_size_m;
+        @include tablet {
+            margin: 40px 0 15px 0;
+            font-size: $h3_text_size_dt;
+        }
+    }
+    &__userInput {
+        padding: 15px;
+        width: 70vw;
+        font-family: 'Josefin Sans Regular';
+        font-size: $h4_text_size_m;
+        border: 1px solid $feather_grey;
+        border-radius: 20px;  
+        @include tablet {
+            padding: 15px 20px;
+            width: 30vw;
+            font-size: $h4_text_size_dt;
+        } 
+        @include desktop {
+            width: 15vw;
+        }
+    }
+    &__loginButton {
+        margin: 70px 0 20px 0;
+        padding: 20px 30px;
+        width: 60vw;
+        border: none;
+        border-radius: 20px;
+        background-color: $quick_silver;
+        font-family: 'Josefin Sans Semi Bold';
+        font-size: $h3_text_size_m;
+        color: $white;
+        @include tablet {
+            padding: 20px;
+            width: 35vw;
+            font-size: $h3_text_size_dt;
+        }
+        @include desktop {
+            width: 15vw;
+        }
+    }
+    &__loginButton:hover {
+        background-color: $white;
+        color: $quick_silver;
+        transition: 0.5s;
+    }
+    &__registerButton {
+        font-family: 'Josefin Sans Semi Bold';
+        font-size: $h4_text_size_m;
+        color: $quick_silver;
+        padding: 10px 20px;
+        width: 30vw;
+        border: none;
+        border-radius: 10px;
+        @include tablet {
+            font-size: $h4_text_size_dt;
+            width: 15vw;
+            padding: 15px 20px;
+        }
+        @include desktop {
+            width: 7vw;
+        }
+    }
+    &__registerButton:hover {
+        background-color: $quick_silver;
+        color: $white;
+        transition: 0.5s;
+    }
+}
