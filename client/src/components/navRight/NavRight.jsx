@@ -1,6 +1,6 @@
 import './NavRight.scss';
-import profilePic from '../../assets/gensProfile.jpg';
-import searchButton from '../../assets/magnifying-glass-solid.svg';
+import profilePic from '../../assets/images/gensProfile.jpg';
+import searchButton from '../../assets/icons/magnifying-glass-solid.svg';
 
 export default function NavRight() {
     return(

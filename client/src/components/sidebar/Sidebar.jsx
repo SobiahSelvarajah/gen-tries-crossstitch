@@ -1,5 +1,5 @@
 import './Sidebar.scss';
-import gensPicture from '../../assets/gensPic.jpeg';
+import gensPicture from '../../assets/images/gensPic.jpeg';
 import instagramIcon from '../../assets/icons/instagram.svg';
 
 export default function Sidebar() {

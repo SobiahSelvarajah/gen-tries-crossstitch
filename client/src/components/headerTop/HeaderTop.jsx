@@ -1,4 +1,4 @@
-import heroImage from '../../assets/hero-image.jpg';
+import heroImage from '../../assets/images/hero-image.jpg';
 import './HeaderTop.scss';
 
 export default function HeaderTop() {

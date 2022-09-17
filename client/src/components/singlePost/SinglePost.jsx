@@ -1,5 +1,5 @@
 import React from 'react';
-import crossStitch from '../../assets/cross-stitch.jpg';
+import crossStitch from '../../assets/images/cross-stitch.jpg';
 import editIcon from '../../assets/icons/edit.svg';
 import deleteIcon from '../../assets/icons/delete.svg'; 
 

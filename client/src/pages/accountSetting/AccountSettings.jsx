@@ -1,5 +1,5 @@
 import React from 'react';
-import profilePic from '../../assets/gensProfile.jpg';
+import profilePic from '../../assets/images/gensProfile.jpg';
 import userIcon from '../../assets/icons/user-solid.svg';
 
 import './AccountSettings.scss';

@@ -1,5 +1,5 @@
 import './HomePagePost.scss';
-import crossStitch from '../../assets/cross-stitch.jpg';
+import crossStitch from '../../assets/images/cross-stitch.jpg';
 
 export default function HomePagePost() {
   return (

@@ -1,4 +1,4 @@
-import stringsImage from '../../assets/strings.jpg';
+import stringsImage from '../../assets/images/strings.jpg';
 
 import './HeaderBottom.scss';
 
