@@ -5,6 +5,9 @@
 
 .navLinks {
     &__container {
+        display: flex;
+        justify-content: center;
+        list-style: none;
         @include mobile {
             display: none;
         }
@@ -13,11 +16,13 @@
         padding: 40px 10px;
         font-family: 'Josefin Sans Regular';
         font-size: $h3_text_size_m;
-        text-decoration: none;
-        color: $lavender_blues;
         @include desktop {
             padding: 30px;
             font-size: $h2_text_size_dt;  
         }
+    }
+    &__link {
+        text-decoration: none;
+        color: $lavender_blues;
     }
 }
