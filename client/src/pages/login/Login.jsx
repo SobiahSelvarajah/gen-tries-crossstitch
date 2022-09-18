@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 import './Login.scss';
 
 export default function Login() {
@@ -27,11 +27,11 @@ export default function Login() {
                     placeholder='Enter your password...'
                 />
                 <button className='login__loginButton'>
-                    LOGIN
+                    Login
                 </button>
             </form>
             <button className='login__registerButton'>
-                Register
+                <Link className='login__registerLink' to='/register'>Register</Link> 
             </button>  
         </div>      
     </section>

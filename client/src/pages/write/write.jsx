@@ -1,40 +1,40 @@
 import React from 'react';
 import crossStitch from '../../assets/images/cross-stitch.jpg';
 
-import './PublishPost.scss';
+import './write.scss';
 
-export default function PublishPost() {
+export default function Write() {
   return (
-    <section className='publishPost__container'>
+    <section className='write__container'>
         <img 
-            className='publishPost__image'
+            className='write__image'
             src={crossStitch}
             alt='postImage'
         />
-        <form className='publishPost__form'>
-            <div className='publishPost__inputContainer'>
+        <form className='write__form'>
+            <div className='write__inputContainer'>
                 <label htmlFor='fileInput'>
-                    <span className='publishPost__plusIcon'>
+                    <span className='write__plusIcon'>
                         +
                     </span>
                 </label>
                 <input 
-                    className='publishPost__fileInput'
+                    className='write__fileInput'
                     id='fileInput'
                     type='file'
                     style={{display:'none'}}
                 />
                 <input 
-                    className='publishPost__titleInput'
+                    className='write__titleInput'
                     id='titleInput'
                     type='text'
                     placeholder='Title'
                     autoFocus={true}
                 />
             </div>
-            <div className='publishPost__inputContainer'>
+            <div className='write__inputContainer'>
                 <textarea 
-                    className='publishPost__textInput'
+                    className='write__textInput'
                     id='textInput'
                     type='text'
                     placeholder='Stitch your story...'
@@ -42,7 +42,7 @@ export default function PublishPost() {
                 />
             </div>
             <button
-                className='publishPost__submit'
+                className='write__submit'
                 type='submit'>
                 Publish
             </button>

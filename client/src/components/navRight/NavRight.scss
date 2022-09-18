@@ -8,6 +8,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        text-align: center;
     }
     &__profile {
         width: 40px;
@@ -17,6 +18,17 @@
         @include desktop {
             width: 70px;
             height: 70px;
+        }
+    }
+    &__link {
+        padding-right: 10px;
+        font-family: 'Josefin Sans Regular';
+        font-size: $h4_text_size_m;
+        text-decoration: none;
+        color: $dark_mint;
+        @include tablet {
+            font-size: $h4_text_size_dt;
+            padding-right: 15px;
         }
     }
     &__search {

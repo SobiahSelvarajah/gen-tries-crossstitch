@@ -5,11 +5,9 @@
 
 .navLogo {
     &__element {
-        padding-right: 20vw;
-        width: 40vw;
+        width: 30vw;
         @include tablet {
-            padding-right: 0;
-            width: 15vw;
+            width: 20vw;
         }
     }
 }

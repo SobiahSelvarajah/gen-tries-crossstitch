@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 import './Register.scss';
 
 export default function Register() {
@@ -39,7 +39,7 @@ export default function Register() {
                 </button>
             </form>
             <button className='register__loginButton'>
-                Login
+                <Link className='register__loginLink' to='/login'>Login</Link>
             </button>  
         </div>      
     </section>

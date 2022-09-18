@@ -2,11 +2,11 @@ import React from 'react';
 import {BrowserRouter as Router, Route, Switch, Link, Routes} from 'react-router-dom';
 import NavBar from './components/navBar/NavBar';
 import HomePage from './pages/homePage/HomePage';
-import SinglePostPage from './pages/singlePostPage/SinglePostPage';
-import PublishPost from './pages/publishPost/PublishPost';
-import AccountSettings from './pages/accountSettings/AccountSettings';
-import Login from './pages/login/Login';
 import Register from './pages/register/Register';
+import Login from './pages/login/Login';
+import Write from './pages/write/write';
+import AccountSettings from './pages/accountSettings/AccountSettings';
+import SinglePostPage from './pages/singlePostPage/SinglePostPage';
 
 function App() {
   const user = false;
@@ -24,8 +24,8 @@ function App() {
           element={user ? <HomePage/> : <Login/>} 
         />   
         <Route 
-          path='/publish' 
-          element={user ? <PublishPost/> : <Register/>} 
+          path='/write' 
+          element={user ? <Write/> : <Register/>} 
         />
         <Route 
           path='/settings' 

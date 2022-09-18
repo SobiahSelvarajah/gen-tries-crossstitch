@@ -88,6 +88,7 @@
     &__loginButton {
         font-family: 'Josefin Sans Semi Bold';
         font-size: $h4_text_size_m;
+        background-color: $white;
         color: $quick_silver;
         padding: 10px 20px;
         width: 30vw;
@@ -106,5 +107,9 @@
         background-color: $quick_silver;
         color: $white;
         transition: 0.5s;
+    }
+    &__loginLink {
+        text-decoration: none;
+        color: $quick_silver;
     }
 }
