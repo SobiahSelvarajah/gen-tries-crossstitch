@@ -16,7 +16,9 @@ export default function Sidebar() {
                         alt='myPic' 
                     />
                     <p className='sidebar__description'>
-                        Genevieve Williams<br></br>
+                        Genevieve Williams
+                        <br></br>
+                        <br></br>
                         Cross stitcher with a love for books.
                     </p>
                 </div>
@@ -46,14 +48,14 @@ export default function Sidebar() {
                     <a 
                         className='sidebar__socialLink'
                         href='https://www.instagram.com/gen_tries_crossstitch/'>
-                            <img 
-                                className='sidebar__socialIcon'
-                                src={instagramIcon}
-                                alt='instagramIcon'
-                            />
-                            <h4 className='sidebar__socialName'>
-                                @gen_tries_crossstitch
-                            </h4>
+                        <img 
+                            className='sidebar__socialIcon'
+                            src={instagramIcon}
+                            alt='instagramIcon'
+                        />
+                        <h4 className='sidebar__socialName'>
+                            @gen_tries_crossstitch
+                        </h4>
                     </a>
                 </div>
             </section>

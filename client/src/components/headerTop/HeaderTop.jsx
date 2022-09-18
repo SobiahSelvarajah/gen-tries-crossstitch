@@ -4,11 +4,10 @@ import './HeaderTop.scss';
 export default function HeaderTop() {
     return(
         <header className='headerTop__container'>
-            <div className='headerTop__text'>
+            <div className='headerTop__textContainer'>
                 <p className='headerTop__introText'>
                     Welcome to
-                </p>
-                <p className='headerTop__logoText'>
+                    <br></br>
                     Gen Tries Crossstitch
                 </p>
             </div>

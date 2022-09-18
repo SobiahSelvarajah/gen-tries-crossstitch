@@ -11,20 +11,20 @@ export default function HomePagePost() {
         />
         <section className='homePagePost__info'>
             <div className='homePagePost__categories'>
-                <span className='homePagePost__category'>
+                <h5 className='homePagePost__category'>
                     Plants
-                </span>
-                <span className='homePagePost__category'>
+                </h5>
+                <h5 className='homePagePost__category'>
                     Challenge
-                </span>
+                </h5>
             </div>
-            <span className='homePagePost__heading'>
+            <h2 className='homePagePost__heading'>
                 Kittens
-            </span>
+            </h2>
             <hr></hr>
-            <span className='homePagePost__date'>
+            <h5 className='homePagePost__date'>
                 2 hours ago
-            </span>
+            </h5>
         </section>
         <p className='homePagePost__description'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. 

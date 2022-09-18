@@ -1,5 +1,5 @@
+import { Link } from 'react-router-dom';
 import stringsImage from '../../assets/images/strings.jpg';
-
 import './HeaderBottom.scss';
 
 export default function HeaderBottom() {
@@ -11,32 +11,19 @@ export default function HeaderBottom() {
                 alt='strings' 
             />
             <div className='headerBottom__links'>
-                <a
-                    className='headerBottom__element' 
-                    href='/'>
+                <Link className='headerBottom__element' to='/'>
                     HOME
-                </a>
-                <a 
-                    className='headerBottom__element'
-                    href='/about'>
+                </Link>
+                <Link className='headerBottom__element' to='/about'>
                     ABOUT
-                </a>
-                <a 
-                    className='headerBottom__element'
-                    href='/contact'>
+                </Link>
+                <Link className='headerBottom__element' to='/contact'>
                     CONTACT
-                </a>
-                <a 
-                    className='headerBottom__element'
-                    href='/mystitches'>
-                    MY STITCHES
-                </a>
-                <a 
-                    className='headerBottom__element'
-                    href='/logout'>
-                    LOGOUT
-                </a>
-        </div>
+                </Link>
+                <Link className='headerBottom__element' to='/write'>
+                    WRITE
+                </Link>
+            </div>
         </header>
     )
 }

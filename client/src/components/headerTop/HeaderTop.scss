@@ -10,12 +10,13 @@
         align-items: center;
         justify-content: space-between;
     }
-    &__text {
+    &__textContainer {
         display: flex;
         flex-direction: column;
         padding-left: 20px;
         font-family: 'Josefin Sans Light';
         font-size: $h3_text_size_m;
+        line-height: $h1_line_height_m;
         color: $lavender_blues;
         @include tablet {
             padding-left: 30px;

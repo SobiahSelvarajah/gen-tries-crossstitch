@@ -6,30 +6,19 @@ export default function NavLinks() {
     return(
         <ul className='navLinks__container'>
             <li className='navLinks__element'>
-                <Link to='/' className='navLinks__link'>
-                    HOME
-                </Link>
+                <Link to='/' className='navLinks__link'>HOME</Link>
             </li>
             <li className='navLinks__element'>
-                <Link to='/about' className='navLinks__link'>
-                    ABOUT
-                </Link>
+                <Link to='/about' className='navLinks__link'>ABOUT</Link>
             </li>
             <li className='navLinks__element'>
-                <Link to='/contact' className='navLinks__link'>
-                    CONTACT
-                </Link>
+                <Link to='/contact' className='navLinks__link'>CONTACT</Link>
             </li>
             <li className='navLinks__element'>
-                <Link to='/write' className='navLinks__link'>
-                    WRITE
-                </Link>
+                <Link to='/write' className='navLinks__link'>WRITE</Link>
             </li>
             <li className='navLinks__element'>
                 {user && 'LOGOUT'}
-                {/* <Link to='/logout' className='navLinks__link'>
-                    LOGOUT
-                </Link> */}
             </li>
         </ul>
     )

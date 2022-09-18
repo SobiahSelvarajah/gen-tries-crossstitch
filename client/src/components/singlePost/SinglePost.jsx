@@ -2,7 +2,6 @@ import React from 'react';
 import crossStitch from '../../assets/images/cross-stitch.jpg';
 import editIcon from '../../assets/icons/edit.svg';
 import deleteIcon from '../../assets/icons/delete.svg'; 
-
 import './SinglePost.scss';
 
 export default function SinglePost() {

@@ -6,9 +6,9 @@ export default function HomePagePosts() {
   return (
     <section className='homePagePosts__container'>
       <div className='homePagePosts__headingPart'>
-        <span className='homePagePosts__heading'>
+        <h1 className='homePagePosts__heading'>
           My Stitches
-        </span>        
+        </h1>        
       </div>
       <div className='homePagePosts__posts'>
         <HomePagePost />

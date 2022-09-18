@@ -1,6 +1,5 @@
 import React from 'react';
 import crossStitch from '../../assets/images/cross-stitch.jpg';
-
 import './write.scss';
 
 export default function Write() {
@@ -41,9 +40,7 @@ export default function Write() {
                     autoFocus={true}
                 />
             </div>
-            <button
-                className='write__submit'
-                type='submit'>
+            <button className='write__submit' type='submit'>
                 Publish
             </button>
         </form>

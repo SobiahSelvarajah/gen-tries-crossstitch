@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Switch, Link, Routes} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import NavBar from './components/navBar/NavBar';
 import HomePage from './pages/homePage/HomePage';
 import Register from './pages/register/Register';
