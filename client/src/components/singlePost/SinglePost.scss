@@ -3,7 +3,7 @@
 @use '../../partials/textstyles' as *;
 @use '../../partials/typeface' as *;
 
-.singlePost {
+.singlePost { 
     &__container {
         font-family: 'Josefin Sans Light';
         margin-top: 10px;
@@ -21,7 +21,7 @@
             justify-content: center;
         }
     }
-    &__image {
+    &__postImage {
         width: 100%;
         object-fit: cover;
         @include tablet {
@@ -41,7 +41,7 @@
             text-align: center;
         }
     }
-    &__headingContainer {
+    &__titleContainer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -50,7 +50,7 @@
             justify-content: space-around;
         }
     }
-    &__heading {
+    &__postTitle {
         font-family: 'Josefin Sans Medium';
         font-size: $h1_text_size_m;
         color: $soft_mint;
@@ -83,7 +83,7 @@
             margin-bottom: 35px;
         }
     }
-    &__author {
+    &__username {
         margin: 0 0 5px 0;
         font-size: $h3_text_size_m;
         color: $lavender_blues;
@@ -92,7 +92,7 @@
             font-size: $h3_text_size_dt;
         }
     }
-    &__date {
+    &__timestamps {
         font-family: 'Josefin Sans Regular';
         font-size: $h5_text_size_m;
         color: $lavender_blues;

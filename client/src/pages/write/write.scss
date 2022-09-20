@@ -19,7 +19,7 @@
             margin-top: 0;
         }
     }
-    &__image {
+    &__postImage {
         width: 100%;
         object-fit: cover;
         @include tablet {
@@ -58,8 +58,8 @@
             font-size: $h1_text_size_dt;
         }
     }
-    &__titleInput,
-    &__textInput {
+    &__postTitle,
+    &__description {
         font-family: 'Josefin Sans Light';
         padding: 10px;
         border: 1px solid $bluebell;
@@ -69,11 +69,11 @@
             border-radius: 20px;
         }
     }
-    &__titleInput:focus,
-    &__textInput:focus {
+    &__postTitle:focus,
+    &__description:focus {
         outline: $lavender_blues solid 1px;
     }
-    &__titleInput {
+    &__postTitle {
         margin-left: 10px;
         font-size: $h2_text_size_m;
         line-height: $h2_line_height_m;
@@ -89,7 +89,7 @@
             width: 20vw;
         }
     }
-    &__textInput {
+    &__description {
         width: 70vw;
         height: 20vh;
         resize: none;

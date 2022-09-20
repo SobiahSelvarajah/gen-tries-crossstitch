@@ -15,7 +15,7 @@
             margin: 0 60px 80px 60px;
         }
     }
-    &__image {
+    &__postImage {
         width: 100%;
         height: 200px;
         object-fit: cover;
@@ -48,7 +48,7 @@
             margin: 0 5px;   
         }
     }
-    &__heading {
+    &__postTitle {
         margin-top: 15px;
         font-family: 'Josefin Sans Semi Bold';
         font-size: $h2_text_size_m;
@@ -58,7 +58,7 @@
             font-size: $h2_text_size_dt;
         }
     }
-    &__date {
+    &__timestamps {
         margin-top: 0px;
         font-family: 'Josefin Sans Light Italic';
         font-size: $h5_text_size_m;

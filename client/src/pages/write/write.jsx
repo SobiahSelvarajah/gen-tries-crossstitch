@@ -6,10 +6,10 @@ export default function Write() {
   return (
     <section className='write__container'>
         <img 
-            className='write__image'
+            className='write__postImage'
             src={crossStitch}
             alt='postImage'
-        />
+        /> 
         <form className='write__form'>
             <div className='write__inputContainer'>
                 <label htmlFor='fileInput'>
@@ -24,7 +24,7 @@ export default function Write() {
                     style={{display:'none'}}
                 />
                 <input 
-                    className='write__titleInput'
+                    className='write__postTitle'
                     id='titleInput'
                     type='text'
                     placeholder='Title'
@@ -33,7 +33,7 @@ export default function Write() {
             </div>
             <div className='write__inputContainer'>
                 <textarea 
-                    className='write__textInput'
+                    className='write__description'
                     id='textInput'
                     type='text'
                     placeholder='Stitch your story...'

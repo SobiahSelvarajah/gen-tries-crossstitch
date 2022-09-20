@@ -9,14 +9,14 @@ export default function SinglePost() {
         <main className='singlePost__container'>
             <div className='singlePost__imageContainer'>
                 <img 
-                    className='singlePost__image'
+                    className='singlePost__postImage'
                     src={crossStitch}
                     alt='blogPostImage'
                 />
             </div>
             <article className='singlePost__textWrap'>
-                <section className='singlePost__headingContainer'>
-                    <h1 className='singlePost__heading'>
+                <section className='singlePost__titleContainer'>
+                    <h1 className='singlePost__postTitle'>
                         Kittens
                     </h1>
                     <div className='singlePost__editIcons'>
@@ -29,14 +29,14 @@ export default function SinglePost() {
                             className='singlePost__deleteIcon'
                             src={deleteIcon}
                             alt='deleteIcon'
-                        />
+                        /> 
                     </div>
                 </section>
                 <section className='singlePost__info'>
-                    <h4 className='singlePost__author'>
+                    <h4 className='singlePost__username'>
                         Genevieve
                     </h4>
-                    <span className='singlePost__date'>
+                    <span className='singlePost__timestamps'>
                         2 hours ago
                     </span>
                 </section>

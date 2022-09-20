@@ -10,7 +10,7 @@ export default function NavRight() {
             {
                 user ? (
                     <img 
-                        className='navRight__profile'
+                        className='navRight__userPic'
                         src={profilePic}
                         alt='profilePic'
                     />                    

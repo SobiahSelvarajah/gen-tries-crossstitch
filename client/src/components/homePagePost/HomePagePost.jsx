@@ -5,24 +5,24 @@ export default function HomePagePost() {
   return (
     <article className='homePagePost__container'>
         <img
-            className='homePagePost__image'
+            className='homePagePost__postImage'
             src={crossStitch}
             alt='postImage' 
         />
         <section className='homePagePost__info'>
             <div className='homePagePost__categories'>
                 <h5 className='homePagePost__category'>
-                    Plants
+                    Plants 
                 </h5>
                 <h5 className='homePagePost__category'>
                     Challenge
                 </h5>
             </div>
-            <h2 className='homePagePost__heading'>
+            <h2 className='homePagePost__postTitle'>
                 Kittens
             </h2>
             <hr></hr>
-            <h5 className='homePagePost__date'>
+            <h5 className='homePagePost__timestamps'>
                 2 hours ago
             </h5>
         </section>

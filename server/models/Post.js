@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const postSchema = new mongoose.Schema(
     {
-        title: {
+        postTitle: {
             type: String,
             required: true,
             unique: true,
@@ -11,7 +11,7 @@ const postSchema = new mongoose.Schema(
             type: String,
             required: true,
         }, 
-        image: {
+        postImage: {
             type: String,
             required: false,
         }, 
