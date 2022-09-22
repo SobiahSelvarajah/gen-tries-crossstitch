@@ -24,4 +24,21 @@ router.post("/register", async(req, res) => {
     }
 });
 
+// Post request for login to send user info
+router.post("/login", async(req, res) => {
+    try {
+        const loginUser = await User.findOne({ username: req.body.username });
+        !loginUser && res.status(400).json("Incorrect login details, please try again.");
+
+        const authorised = await bcrypt.compare(req.body.password, loginUser.password);
+        !authorised && res.status(400).json("Incorrect login details, please try again.");
+
+        const {password, ...others} = loginUser._doc;
+        res.status(200).json(others);
+    }
+    catch(err) {
+        res.status(500).json(err);
+    }
+});
+
 module.exports = router;
