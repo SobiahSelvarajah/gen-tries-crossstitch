@@ -8,8 +8,7 @@ app.use(express.json());
 dotenv.config();
 
 mongoose
-    .connect(process.env.MONGO_URL, {
-    })
+    .connect(process.env.MONGO_URL)
     .then(console.log("Connected to mongo"))
     .catch((err) => console.log(err));
 
