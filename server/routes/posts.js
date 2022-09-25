@@ -25,4 +25,25 @@ router.post("/", async(req, res) => {
     }
 });
 
+// Put request - update post details
+router.put("/:postID", async(req, res) => {
+    const selectedPostID = req.params.postID;
+    const postDataID = req.body.postId;
+    if(selectedPostID === postDataID) {
+        try {
+            const updatePost = await Post.findByIdAndUpdate(selectedPostID,
+                {$set: req.body},
+                {new: true}
+                );
+            res.status(200).json(updatePost);
+        }
+        catch(err) {
+            res.status(500).json("Oops, server error...will be fixed shortly.");
+        }
+    }
+    else {
+        res.status(401).json("Sorry, you can only update your own post.");
+    }
+});
+
 module.exports = router;
