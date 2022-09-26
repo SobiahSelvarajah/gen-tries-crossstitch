@@ -13,6 +13,26 @@ router.get("/:postID", async(req, res) => {
     }
 });
 
+// Get request - get all posts
+router.get("/", async(req, res) => {
+    const userName = req.query.user;
+    const categoryName = req.query.category;
+    try{
+        let postList;
+        if(userName) {
+            postList = await Post.find({username: userName});
+        } else if(categoryName) {
+            postList = await Post.find({categories: { $in:[categoryName]}});
+        } else {
+            postList = await Post.find();
+        }
+        res.status(200).json(postList);
+    }
+    catch(err) {
+        res.status(500).json("Oops, server errror...will be fixed shortly.");
+    }
+});
+
 // Post request - create new post
 router.post("/", async(req, res) => {
     const creatingNewPost = new Post(req.body);
