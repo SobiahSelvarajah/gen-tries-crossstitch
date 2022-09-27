@@ -1,25 +1,25 @@
 # Gen Tries Crossstitch
 
-A stitching blogging website built with React JS.
+A stitching blog website built with a MERN stack.
 
 ## Technologies used
 
-- Javascript
-- React JS
-- SASS
+- Languages: JavaScript ES6, HTML5, SCSS
+- Frameworks: React.js, Express.js
+- Database Management: MongoDB
+- Development Tools: Github, Git, Node.js, Postman
 
 ## Functionalities
 
 Users can:
 
-    - Read published blogs
-    - Comment on published blogs
-    - Register to create an account
-    - Log in to their account
-    - Write their own blogs once they have an account
-    - Edit and delete their ow blogs
+- Read published blogs
+- Register to create an account
+- Log in to their account
+- Write their own blogs once they have an account
+- Edit and delete their own blogs
 
 ## To start the app
 
 - Run npm install
-- Run npm start on the client
+- Run npm start on the client and the server
