@@ -1,6 +1,7 @@
 import React from 'react';
 import HomePagePost from '../homePagePost/HomePagePost';
 import './HomePagePosts.scss';
+import axios from "axios";
 
 export default function HomePagePosts() {
   return (
