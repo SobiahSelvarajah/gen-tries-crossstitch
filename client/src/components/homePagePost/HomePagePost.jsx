@@ -1,37 +1,36 @@
 import './HomePagePost.scss';
-import crossStitch from '../../assets/images/cross-stitch.jpg';
 
-export default function HomePagePost() {
+const HomePagePost = ({post}) => {
   return (
     <article className='homePagePost__container'>
-        <img
-            className='homePagePost__postImage'
-            src={crossStitch}
-            alt='postImage' 
-        />
+        {post.postImage && (
+            <img
+                className='homePagePost__postImage'
+                src={post.postImage}
+                alt='postImage' 
+            />
+        )}
         <section className='homePagePost__info'>
             <div className='homePagePost__categories'>
-                <h5 className='homePagePost__category'>
-                    Plants 
-                </h5>
-                <h5 className='homePagePost__category'>
-                    Challenge
-                </h5>
+                {post.categories.map((category) => (
+                    <h5 className='homePagePost__category'>
+                        {category.name}
+                    </h5>                    
+                ))}
             </div>
             <h2 className='homePagePost__postTitle'>
-                Kittens
+                {post.postTitle}
             </h2>
             <hr></hr>
             <h5 className='homePagePost__timestamps'>
-                2 hours ago
+                {new Date(post.createdAt).toDateString()}
             </h5>
         </section>
         <p className='homePagePost__description'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Totam reiciendis ipsum quasi, odio eum veritatis iste eveniet 
-            magnam labore quas eligendi nesciunt dignissimos vel dolores 
-            at. Modi praesentium blanditiis accusantium!
+            {post.description}
         </p>
     </article>
   )
 }
+
+export default HomePagePost;

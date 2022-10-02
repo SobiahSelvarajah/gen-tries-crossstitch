@@ -1,19 +1,24 @@
 import React from "react";
+import { useFetch } from '../../hooks/index';
 import HeroHeader from "../../components/heroHeader/HeroHeader";
 import Sidebar from "../../components/sidebar/Sidebar";
 import HomePagePosts from "../../components/homePagePosts/HomePagePosts";
 import './HomePage.scss';
 
-function HomePage() {
+const HomePage = () => {
+    const { posts, error } = useFetch("/posts", []);
+
     return (
         <>
             <HeroHeader />
             <section className="homePage__container">
-                <HomePagePosts />
+                {error && <p>{error}</p>}
+                <HomePagePosts
+                    posts={posts} 
+                />
                 <Sidebar />
             </section>
         </>
-
     );
 }
 

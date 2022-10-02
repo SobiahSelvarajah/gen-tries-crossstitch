@@ -1,9 +1,8 @@
 import React from 'react';
 import HomePagePost from '../homePagePost/HomePagePost';
 import './HomePagePosts.scss';
-import axios from "axios";
 
-export default function HomePagePosts() {
+const HomePagePosts = ({posts}) => {
   return (
     <section className='homePagePosts__container'>
       <div className='homePagePosts__headingPart'>
@@ -12,13 +11,14 @@ export default function HomePagePosts() {
         </h1>        
       </div>
       <div className='homePagePosts__posts'>
-        <HomePagePost />
-        <HomePagePost />
-        <HomePagePost />
-        <HomePagePost />
-        <HomePagePost />
-        <HomePagePost />        
+        {posts.map((eachPost) => (
+          <HomePagePost 
+            post={eachPost}
+          />            
+        ))}
       </div>
     </section>
   )
-}
+};
+
+export default HomePagePosts;
