@@ -1,23 +1,24 @@
 import React from 'react';
-import crossStitch from '../../assets/images/cross-stitch.jpg';
 import editIcon from '../../assets/icons/edit.svg';
 import deleteIcon from '../../assets/icons/delete.svg'; 
 import './SinglePost.scss';
 
-const SinglePost = () => {
+const SinglePost = ({post}) => {
     return(
         <main className='singlePost__container'>
             <div className='singlePost__imageContainer'>
-                <img 
-                    className='singlePost__postImage'
-                    src={crossStitch}
-                    alt='blogPostImage'
-                />
+                {post.postImage && (
+                    <img 
+                        className='singlePost__postImage'
+                        src={post.postImage}
+                        alt='blogPostImage'
+                    />                    
+                )}
             </div>
             <article className='singlePost__textWrap'>
                 <section className='singlePost__titleContainer'>
                     <h1 className='singlePost__postTitle'>
-                        Kittens
+                        {post.postTitle}
                     </h1>
                     <div className='singlePost__editIcons'>
                         <img 
@@ -34,17 +35,14 @@ const SinglePost = () => {
                 </section>
                 <section className='singlePost__info'>
                     <h4 className='singlePost__username'>
-                        Genevieve
+                        {post.username}
                     </h4>
                     <span className='singlePost__timestamps'>
-                        2 hours ago
+                        {new Date(post.createdAt).toDateString()}
                     </span>
                 </section>
                 <p className='singlePost__description'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Totam reiciendis ipsum quasi, odio eum veritatis iste eveniet 
-                    magnam labore quas eligendi nesciunt dignissimos vel dolores 
-                    at. Modi praesentium blanditiis accusantium!
+                    {post.descrription}
                 </p>
             </article>
         </main>

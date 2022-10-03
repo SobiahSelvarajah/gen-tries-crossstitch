@@ -1,15 +1,23 @@
 import React from 'react';
+import { useFetchSinglePost } from '../../hooks/useFetchSinglePost';
 import Sidebar from '../../components/sidebar/Sidebar';
 import SinglePost from '../../components/singlePost/SinglePost';
 import './SinglePostPage.scss';
 
-export default function SinglePostPage() {
+const SinglePostPage = () => {
+  const { post, error } = useFetchSinglePost("/posts/", {});
+
   return (
     <>
       <section className="singlePostPage__container">
-        <SinglePost />
+        {error && <p>{error}</p>}
+        <SinglePost
+          post = {post}
+        />
         <Sidebar />
       </section>
     </>
   )
 }
+
+export default SinglePostPage;

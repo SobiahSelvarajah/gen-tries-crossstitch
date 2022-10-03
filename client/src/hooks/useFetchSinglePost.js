@@ -2,11 +2,11 @@ import { useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
-export function useFetchSinglePost(url) {
+export function useFetchSinglePost(url, initialState) {
 
     const location = useLocation();
     const locationID = location.pathname.split("/")[2];
-    const [post, setPost] = useState({});
+    const [post, setPost] = useState(initialState);
     const [error, setError] = useState('');
     
     useEffect(() => {
@@ -19,6 +19,6 @@ export function useFetchSinglePost(url) {
                 setError(err.message);
             }
         } getSinglePost();
-    }, [url]);
+    }, [url, locationID]);
     return { post, error };
 }
