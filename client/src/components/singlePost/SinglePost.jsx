@@ -4,7 +4,7 @@ import editIcon from '../../assets/icons/edit.svg';
 import deleteIcon from '../../assets/icons/delete.svg'; 
 import './SinglePost.scss';
 
-export default function SinglePost() {
+const SinglePost = () => {
     return(
         <main className='singlePost__container'>
             <div className='singlePost__imageContainer'>
@@ -50,3 +50,5 @@ export default function SinglePost() {
         </main>
     )
 }
+
+export default SinglePost;
