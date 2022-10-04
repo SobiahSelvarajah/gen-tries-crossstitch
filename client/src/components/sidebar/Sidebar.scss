@@ -71,24 +71,7 @@
         flex-direction: column;
         align-items: center;
     }
-    &__socialLink {
-        margin: 20px 0;
-        text-decoration: none;
-    }
-    &__socialIcon {
-        width: 3vw;
-    }
-    &__socialName {
-        margin-top: 10px;
-        font-family: 'Josefin Sans Light';
-        font-size: $h4_text_size_m;
-        color: $quick_silver;
-        @include desktop {
-            font-size: $h4_text_size_dt;
-        }
-    }
 }
-
 .categories {
     &__list {
         list-style: none;
@@ -108,4 +91,22 @@
             font-size: $h4_text_size_dt;
         }
     }
+}
+.instagramIcon {
+    &__socialLink {
+        margin: 20px 0;
+        text-decoration: none;
+    }
+    &__socialIcon {
+        width: 3vw;
+    }
+    &__socialName {
+        margin-top: 10px;
+        font-family: 'Josefin Sans Light';
+        font-size: $h4_text_size_m;
+        color: $quick_silver;
+        @include desktop {
+            font-size: $h4_text_size_dt;
+        }
+    }    
 }
