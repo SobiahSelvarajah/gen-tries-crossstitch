@@ -13,6 +13,7 @@ const HomePagePosts = ({posts}) => {
       <div className='homePagePosts__posts'>
         {posts.map((eachPost) => (
           <HomePagePost 
+            key={eachPost._id}
             post={eachPost}
           />            
         ))}
