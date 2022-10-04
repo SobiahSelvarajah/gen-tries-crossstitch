@@ -1,6 +1,7 @@
 import './Sidebar.scss';
 import gensPicture from '../../assets/images/gensPic.jpeg';
 import instagramIcon from '../../assets/icons/instagram.svg';
+import Categories from '../categories/Categories';
 
 export default function Sidebar() {
     return(
@@ -26,20 +27,7 @@ export default function Sidebar() {
                     <h2 className='sidebar__heading'>
                         CATEGORIES
                     </h2>
-                    <ul className='sidebar__list'>
-                        <li className='sidebar__listItem'>
-                            Plants
-                        </li>
-                        <li className='sidebar__listItem'>
-                            Animals
-                        </li>
-                        <li className='sidebar__listItem'>
-                            Festivities
-                        </li>
-                        <li className='sidebar__listItem'>
-                            Challenges
-                        </li>
-                    </ul>
+                    <Categories />
                 </div>
                 <div className='sidebar__socials'>
                     <h2 className='sidebar__heading'>

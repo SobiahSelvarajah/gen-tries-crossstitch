@@ -66,24 +66,6 @@
             font-size: $h4_text_size_dt;
         }
     }
-    &__list {
-        list-style: none;
-        margin: 0 15px 15px 15px;
-        padding: 0;
-        @include desktop {
-            margin: 0 60px 20px 60px;
-        }
-    }
-    &__listItem {
-        width: 50%;
-        margin: 10px 0 15px 0;
-        font-family: 'Josefin Sans Regular';
-        font-size: $h4_text_size_m;
-        text-align: start;
-        @include desktop {
-            font-size: $h4_text_size_dt;
-        }
-    }
     &__socials {
         display: flex;
         flex-direction: column;
@@ -101,6 +83,27 @@
         font-family: 'Josefin Sans Light';
         font-size: $h4_text_size_m;
         color: $quick_silver;
+        @include desktop {
+            font-size: $h4_text_size_dt;
+        }
+    }
+}
+
+.categories {
+    &__list {
+        list-style: none;
+        margin: 0 15px 15px 15px;
+        padding: 0;
+        @include desktop {
+            margin: 0 60px 20px 60px;
+        }
+    }
+    &__listItem {
+        width: 50%;
+        margin: 10px 0 15px 0;
+        font-family: 'Josefin Sans Regular';
+        font-size: $h4_text_size_m;
+        text-align: start;
         @include desktop {
             font-size: $h4_text_size_dt;
         }

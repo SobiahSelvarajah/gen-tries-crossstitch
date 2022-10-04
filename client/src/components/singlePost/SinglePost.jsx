@@ -42,7 +42,7 @@ const SinglePost = ({post}) => {
                     </span>
                 </section>
                 <p className='singlePost__description'>
-                    {post.descrription}
+                    {post.description}
                 </p>
             </article>
         </main>
