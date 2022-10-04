@@ -63,13 +63,6 @@
         display: flex;
         flex-direction: row;
     }
-    &__deleteIcon {
-        width: 100%;
-        height: 15px;
-        @include tablet {
-            height: 20px;
-        }
-    }
     &__info {
         margin-bottom: 30px;
         @include desktop {
