@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import './NavRight.scss';
 import profilePic from '../../assets/images/gensProfile.jpg';
-import searchButton from '../../assets/icons/magnifying-glass-solid.svg';
+import SearchButton from '../searchButton/SearchButton';
 
 export default function NavRight() {
     const user = false;
@@ -21,11 +21,7 @@ export default function NavRight() {
                 </>
                 )
             }
-            <img 
-                className="navRight__search"
-                src={searchButton}
-                alt='searchButton'
-            />
+            <SearchButton />
         </div>
     )
 }
