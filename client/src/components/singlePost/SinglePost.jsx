@@ -1,6 +1,7 @@
 import React from 'react';
-import editIcon from '../../assets/icons/edit.svg';
 import deleteIcon from '../../assets/icons/delete.svg'; 
+import EditPostIcon from '../editPostIcon/EditPostIcon';
+
 import './SinglePost.scss';
 
 const SinglePost = ({post}) => {
@@ -21,11 +22,7 @@ const SinglePost = ({post}) => {
                         {post.postTitle}
                     </h1>
                     <div className='singlePost__editIcons'>
-                        <img 
-                            className='singlePost__editIcon'
-                            src={editIcon}
-                            alt='editIcon'
-                        />
+                        <EditPostIcon />
                         <img 
                             className='singlePost__deleteIcon'
                             src={deleteIcon}
