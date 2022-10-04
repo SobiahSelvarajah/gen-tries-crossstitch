@@ -10,16 +10,6 @@
         justify-content: center;
         text-align: center;
     }
-    &__userPic {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        object-fit: cover;
-        @include desktop {
-            width: 70px;
-            height: 70px;
-        }
-    }
     &__link {
         padding-right: 10px;
         font-family: 'Josefin Sans Regular';
@@ -31,7 +21,18 @@
             padding-right: 15px;
         }
     }
-
+}
+.profilePic {
+    &__image {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+        @include desktop {
+            width: 70px;
+            height: 70px;
+        }
+    }    
 }
 .searchButton {
     &__image {

@@ -1,9 +1,7 @@
-import './Sidebar.scss';
 import gensPicture from '../../assets/images/gensPic.jpeg';
-import instagramIcon from '../../assets/icons/instagram.svg';
 import Categories from '../categories/Categories';
 import { InstagramIcon } from '../instagramIcon/InstagramIcon';
-
+import './Sidebar.scss';
 
 export default function Sidebar() {
     return(
