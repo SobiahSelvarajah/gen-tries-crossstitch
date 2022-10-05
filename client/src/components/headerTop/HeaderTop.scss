@@ -27,10 +27,12 @@
             font-size: $h1_text_size_dt;
         }
     }
+}
+.mainHeroImage {
     &__image {
         width: 50vw;
         @include tablet {
             width: 60vw;
         }
-    }
+    }    
 }

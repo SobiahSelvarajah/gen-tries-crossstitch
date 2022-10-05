@@ -1,4 +1,5 @@
-import heroImage from '../../assets/images/hero-image.jpg';
+
+import MainHeroFunction from '../mainHeroImage/MainHeroImage';
 import './HeaderTop.scss';
 
 export default function HeaderTop() {
@@ -11,11 +12,7 @@ export default function HeaderTop() {
                     Gen Tries Crossstitch
                 </p>
             </div>
-            <img
-                className='headerTop__image'
-                src={heroImage}
-                alt='heroImage'
-            />
+            <MainHeroFunction />
         </header>
     )
 }
