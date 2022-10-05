@@ -1,4 +1,4 @@
-import gensPicture from '../../assets/images/gensPic.jpeg';
+import AboutMePic from '../aboutMePic/AboutMePic';
 import Categories from '../categories/Categories';
 import { InstagramIcon } from '../instagramIcon/InstagramIcon';
 import './Sidebar.scss';
@@ -12,11 +12,7 @@ export default function Sidebar() {
                         <h2 className='sidebar__heading'>
                             ABOUT ME
                         </h2>
-                        <img
-                            className='sidebar__image'
-                            src={gensPicture}
-                            alt='myPic' 
-                        />
+                        <AboutMePic />
                         <p className='sidebar__description'>
                             Genevieve Williams
                             <br></br>
