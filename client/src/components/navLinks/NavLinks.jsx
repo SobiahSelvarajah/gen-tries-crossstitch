@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import './NavLinks.scss';
 
 export default function NavLinks() {
-    const user = false;
+    const user = true;
     return(
         <ul className='navLinks__container'>
             <li className='navLinks__element'>

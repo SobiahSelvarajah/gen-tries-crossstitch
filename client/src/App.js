@@ -2,6 +2,7 @@ import React from 'react';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import NavBar from './components/navBar/NavBar';
 import HomePage from './pages/homePage/HomePage';
+import About from './pages/about/About';
 import Register from './pages/register/Register';
 import Login from './pages/login/Login';
 import Write from './pages/write/write';
@@ -14,7 +15,14 @@ function App() {
     <Router>
       <NavBar/>
       <Routes>
-        <Route exact path='/' element={<HomePage/>} />
+        <Route 
+          exact path='/' 
+          element={<HomePage/>} 
+        />
+        <Route 
+          path='/about'
+          element={<About/>}
+        />
         <Route 
           path='/register' 
           element={user ? <HomePage/> : <Register/>} 
