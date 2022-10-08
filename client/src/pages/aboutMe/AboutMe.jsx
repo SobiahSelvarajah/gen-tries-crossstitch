@@ -1,10 +1,12 @@
 import React from "react";
-import AboutMeDescription from "../../components/aboutMeDescription/AboutMeDescription";
+import AboutMePic from "../../components/aboutMePic/AboutMePic";
+import AboutMeContent from "../../components/aboutMeContent/AboutMeContent";
 
 const About = () => {
     return(
         <section className="about__container">
-            <AboutMeDescription />
+            <AboutMePic />
+            <AboutMeContent />
         </section>
     )
 }
