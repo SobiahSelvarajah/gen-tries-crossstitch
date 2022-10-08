@@ -2,7 +2,7 @@ import React from 'react';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import NavBar from './components/navBar/NavBar';
 import HomePage from './pages/homePage/HomePage';
-import About from './pages/about/About';
+import AboutMe from './pages/aboutMe/AboutMe';
 import Register from './pages/register/Register';
 import Login from './pages/login/Login';
 import Write from './pages/write/write';
@@ -21,7 +21,7 @@ function App() {
         />
         <Route 
           path='/about'
-          element={<About/>}
+          element={<AboutMe/>}
         />
         <Route 
           path='/register' 
