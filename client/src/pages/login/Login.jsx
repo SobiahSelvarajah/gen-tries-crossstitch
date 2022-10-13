@@ -30,9 +30,11 @@ export default function Login() {
                     Login
                 </button>
             </form>
-            <button className='login__registerButton'>
-                <Link className='login__registerLink' to='/register'>Register</Link> 
-            </button>  
+            <Link className='login__registerLink' to='/register'>
+                <button className='login__registerButton'>
+                    Register
+                </button>  
+            </Link> 
         </div>      
     </section>
   )

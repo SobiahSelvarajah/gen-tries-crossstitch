@@ -4,7 +4,7 @@ import ProfilePic from '../profilePic/ProfilePic';
 import SearchButton from '../searchButton/SearchButton';
 
 export default function NavRight() {
-    const user = true;
+    const user = false;
     return(
         <div className="navRight__container">
             {user ? (

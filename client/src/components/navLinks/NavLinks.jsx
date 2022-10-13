@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import './NavLinks.scss';
 
 export default function NavLinks() {
-    const user = true;
+    const user = false;
     return(
         <ul className='navLinks__container'>
             <li className='navLinks__element'>
@@ -12,7 +12,7 @@ export default function NavLinks() {
                 <Link to='/about' className='navLinks__link'>ABOUT</Link>
             </li>
             <li className='navLinks__element'>
-                <Link to='/contact' className='navLinks__link'>CONTACT</Link>
+                <Link to='/stitches' className='navLinks__link'>STITCHES</Link>
             </li>
             <li className='navLinks__element'>
                 <Link to='/write' className='navLinks__link'>WRITE</Link>

@@ -88,6 +88,7 @@
     &__registerButton {
         font-family: 'Josefin Sans Semi Bold';
         font-size: $h4_text_size_m;
+        color: $quick_silver;
         padding: 10px 20px;
         width: 30vw;
         border: none;
@@ -103,6 +104,7 @@
     }
     &__registerButton:hover {
         background-color: $quick_silver;
+        color: $white;
         transition: 0.5s;
     }
     &__registerLink {

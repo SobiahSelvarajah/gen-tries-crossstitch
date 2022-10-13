@@ -17,6 +17,7 @@ export default function Register() {
                     className='register__userInput'
                     type='text'
                     placeholder='Enter your username...'
+                    required
                 />
                 <label className='register__userInfo'>
                     Email
@@ -24,7 +25,9 @@ export default function Register() {
                 <input
                     className='register__userInput'
                     type='email'
+                    id='email'
                     placeholder='Enter your email...'
+                    required
                 />
                 <label className='register__userInfo'>
                     Password
@@ -33,14 +36,17 @@ export default function Register() {
                     className='register__userInput'
                     type='password'
                     placeholder='Enter your password...'
+                    required
                 />
                 <button className='register__registerButton'>
                     Register
                 </button>
             </form>
-            <button className='register__loginButton'>
-                <Link className='register__loginLink' to='/login'>Login</Link>
-            </button>  
+            <Link className='register__loginLink' to='/login'>
+                <button className='register__loginButton'>
+                    Login
+                </button>  
+            </Link>
         </div>      
     </section>
   )

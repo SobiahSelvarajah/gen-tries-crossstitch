@@ -7,7 +7,7 @@ const HomePagePosts = ({posts}) => {
     <section className='homePagePosts__container'>
       <div className='homePagePosts__headingPart'>
         <h1 className='homePagePosts__heading'>
-          Just Stitching Away...
+          Stitches To Love
         </h1>        
       </div>
       <div className='homePagePosts__posts'>
