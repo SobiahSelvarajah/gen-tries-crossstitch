@@ -27,13 +27,13 @@ router.post("/register", async(req, res) => {
 // Post request for login to send user info
 router.post("/login", async(req, res) => {
     try {
-        const loginUser = await User.findOne({ username: req.body.username });
-        !loginUser && res.status(401).json("Incorrect login details, please try again.");
+        const loginUsername = await User.findOne({ username: req.body.username });
+        !loginUsername && res.status(400).json("Incorrect username, please try again.");
 
-        const authorised = await bcrypt.compare(req.body.password, loginUser.password);
-        !authorised && res.status(401).json("Incorrect login details, please try again.");
+        const loginPassword = await bcrypt.compare(req.body.password, loginUsername.password);
+        !loginPassword && res.status(400).json("Incorrect password, please try again.");
 
-        const {password, ...others} = loginUser._doc;
+        const {password, ...others} = loginUsername._doc;
         res.status(200).json(others);
     }
     catch(err) {
