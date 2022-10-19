@@ -1,0 +1,19 @@
+@use '../../partials/breakpoints' as *;
+@use '../../partials/colors' as *;
+@use '../../partials/textstyles' as *;
+@use '../../partials/typeface' as *;
+
+.hotTopics {
+    &__container {
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__heading {
+        font-family: 'Josefin Sans Light';
+        font-size: $h3_text_size_m;
+        color: $lavender_blues;
+    }
+}
