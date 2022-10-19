@@ -1,0 +1,35 @@
+@use '../../partials/breakpoints' as *;
+@use '../../partials/colors' as *;
+@use '../../partials/textstyles' as *;
+@use '../../partials/typeface' as *;
+
+.introHero {
+    &__container {
+        margin: 20px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    &__video {
+        padding: 50px;
+    }
+    &__textContainer {
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Josefin Sans Light';        
+    }
+    &__heading {
+        text-align: center;
+        font-size: $h3_text_size_m;
+        color: $lavender_blues;
+    }
+    &__description {
+        text-align: center;
+        font-size: $h4_text_size_m;
+        color: $dark_mint;
+    }
+}
