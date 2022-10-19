@@ -10,7 +10,7 @@ import AccountSettings from './pages/accountSettings/AccountSettings';
 import SinglePostPage from './pages/singlePostPage/SinglePostPage';
 
 function App() {
-  const user = true;
+  const user = false;
   return(
     <Router>
       <NavBar/>
