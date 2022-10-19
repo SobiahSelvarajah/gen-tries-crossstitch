@@ -1,6 +1,7 @@
 import React from 'react';
 import DeletePostIcon from '../deletePostIcon/DeletePostIcon';
 import EditPostIcon from '../editPostIcon/EditPostIcon';
+import crossStitch from '../../assets/images/cross-stitch.jpg';
 
 import './SinglePost.scss';
 
@@ -9,13 +10,13 @@ const SinglePost = ({post}) => {
         <>
             <main className='singlePost__container'>
                 <div className='singlePost__imageContainer'>
-                    {post.postImage && (
+                    {/* {post.postImage && ( */}
                         <img 
                             className='singlePost__postImage'
-                            src={post.postImage}
+                            src={crossStitch}
                             alt='blogPostImage'
                         />                    
-                    )}
+                    {/* )} */}
                 </div>
                 <article className='singlePost__textWrap'>
                     <section className='singlePost__titleContainer'>

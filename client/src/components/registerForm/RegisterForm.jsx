@@ -22,6 +22,7 @@ export default function RegisterForm() {
             res.data && window.location.replace('/login');
         } catch(err) {
             setError(true);
+            console.log(err.response)
         }
     };
 
@@ -37,6 +38,9 @@ export default function RegisterForm() {
                 required
                 onChange={(e) => setUsername(e.target.value)}
             />
+            {error && 
+                <span className='registerForm__error'>{error}</span>
+            }            
             <label className='registerForm__userInfo'>
                 Email
             </label>

@@ -9,4 +9,4 @@ export default function AboutMePic() {
             alt='myPic' 
         />
     )
-}
+} 

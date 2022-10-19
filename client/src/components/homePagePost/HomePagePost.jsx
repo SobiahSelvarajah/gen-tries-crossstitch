@@ -1,17 +1,18 @@
 import { Link } from 'react-router-dom';
+import crossStitch from '../../assets/images/cross-stitch.jpg';
 import './HomePagePost.scss';
 
 const HomePagePost = ({post}) => {
   return (
     <Link to={`/post/${post._id}`} style={{textDecoration:'none'}}>
         <article className='homePagePost__container'>
-            {post.postImage && (
+            {/* {post.postImage && ( */}
                 <img
                     className='homePagePost__postImage'
-                    src={post.postImage}
+                    src={crossStitch}
                     alt='postImage' 
                 />
-            )}
+            {/* )} */}
             <section className='homePagePost__info'>
                 <div className='homePagePost__categories'>
                     {post.categories.map((category) => (

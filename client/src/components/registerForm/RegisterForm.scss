@@ -47,6 +47,7 @@
         font-size: $h3_text_size_m;
         color: $white;
         @include tablet {
+            margin-top: 50px;
             padding: 20px;
             width: 35vw;
             font-size: $h3_text_size_dt;

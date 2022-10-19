@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Register.scss';
 import RegisterForm from '../../components/registerForm/RegisterForm';
+import './Register.scss';
 
 export default function Register() {
     
