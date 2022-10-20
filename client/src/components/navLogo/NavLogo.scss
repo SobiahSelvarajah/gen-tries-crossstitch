@@ -5,9 +5,12 @@
 
 .navLogo {
     &__element {
-        width: 30vw;
+        width: 100px;
         @include tablet {
-            width: 20vw;
+            width: 140px;
+        }
+        @include desktop {
+            width: 200px;
         }
     }
 }
