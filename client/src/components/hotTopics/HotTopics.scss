@@ -10,10 +10,21 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        font-family: 'Josefin Sans Light';        
     }
     &__heading {
-        font-family: 'Josefin Sans Light';
+
         font-size: $h3_text_size_m;
         color: $lavender_blues;
+    }
+    &__list {
+        text-decoration: none;
+        list-style: none;
+        padding-left: 0;
+    }
+    &__listItem {
+        margin-bottom: 20px;
+        font-size: $h5_text_size_m;
+        color: $dark_mint;
     }
 }
