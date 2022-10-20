@@ -5,6 +5,7 @@
 
 .navLinks {
     &__container {
+        padding-left: 10px;
         display: flex;
         justify-content: center;
         list-style: none;
@@ -13,18 +14,27 @@
         }
     }
     &__element {
-        padding: 40px 10px;
         font-family: 'Josefin Sans Regular';
         font-size: $h3_text_size_m;
         text-decoration: none;
         color: $lavender_blues;
         @include desktop {
-            padding: 30px;
+            padding: 10px;
             font-size: $h2_text_size_dt;  
         }
     }
     &__link {
+        padding: 15px;
         text-decoration: none;
         color: $lavender_blues;
+        border-radius: 30px;
+        @include desktop {
+            padding: 30px;            
+        }
     }
+    &__link:hover {
+        background-color: $bluebell;
+        color: $white;
+        transition: 0.4s;
+    }    
 }
