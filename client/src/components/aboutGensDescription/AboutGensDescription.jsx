@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function AboutMeDescription() {
+export default function AboutGensDescription() {
     return(
-        <div className="aboutMeDescription__textContainer">
-            <p className="aboutMeDescription__text">
+        <div className="aboutGensDescription__textContainer">
+            <p className="aboutGensDescription__text">
                 Hi everyone! I'm Genevieve, I'm 26 and I 
                 live in Cheshire in the UK. I started 
                 stitching properly at the beginning of 

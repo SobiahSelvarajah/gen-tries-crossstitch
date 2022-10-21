@@ -1,17 +1,17 @@
 import React from "react";
 import instaIcon from '../../assets/icons/instagram.svg';
 
-export function InstagramIcon() {
+export default function GensInsta() {
     return(
         <a 
-            className='instagramIcon__socialLink'
+            className='gensInsta__socialLink'
             href='https://www.instagram.com/gen_tries_crossstitch/'>
             <img 
-                className='instagramIcon__socialIcon'
+                className='gensInsta__socialIcon'
                 src={instaIcon}
                 alt='instagramIcon'
             />
-            <h4 className='instagramIcon__socialName'>
+            <h4 className='gensInsta__socialName'>
                 @gen_tries_crossstitch
             </h4>
         </a>

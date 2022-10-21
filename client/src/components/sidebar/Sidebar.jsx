@@ -1,6 +1,5 @@
-import AboutMePic from '../aboutMePic/AboutMePic';
 import Categories from '../categories/Categories';
-import { InstagramIcon } from '../instagramIcon/InstagramIcon';
+import InstagramIcon from '../gensInsta/GensInsta';
 import './Sidebar.scss';
 
 export default function Sidebar() {
@@ -12,7 +11,6 @@ export default function Sidebar() {
                         <h2 className='sidebar__heading'>
                             ABOUT ME
                         </h2>
-                        <AboutMePic />
                         <p className='sidebar__description'>
                             Genevieve Williams
                             <br></br>
