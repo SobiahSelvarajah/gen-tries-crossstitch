@@ -7,13 +7,15 @@
     &__container {
         margin: 20px 0;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
     &__video {
         padding: 50px;
     }
+}
+.introText {
     &__textContainer {
         margin: 10px;
         display: flex;

@@ -7,13 +7,14 @@
     &__container {
         margin: 10px;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         font-family: 'Josefin Sans Light';        
     }
+}
+.hotTopicsText {
     &__heading {
-
         font-size: $h3_text_size_m;
         color: $lavender_blues;
     }
@@ -26,5 +27,10 @@
         margin-bottom: 20px;
         font-size: $h5_text_size_m;
         color: $dark_mint;
+    }
+}
+.hotTopicsImage {
+    &__image {
+        width: 30vw;
     }
 }

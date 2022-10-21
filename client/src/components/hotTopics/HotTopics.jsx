@@ -1,23 +1,13 @@
 import React from 'react';
+import HotTopicsText from '../hotTopicsText/HotTopicsText';
+import HotTopicsImage from '../hotTopicsImage/HotTopicsImage';
 import './HotTopics.scss';
 
 export default function HotTopics() {
     return(
-        <section className='hotTopics__container'>
-            <h3 className='hotTopics__heading'>
-                Hot Topics
-            </h3>
-            <ul className='hotTopics__list'>
-                <li className='hotTopics__listItem'>
-                    New fabrics...but are they hit or miss?
-                </li>
-                <li className='hotTopics__listItem'>
-                    Beginner guide for the newbie
-                </li>
-                <li className='hotTopics__listItem'>
-                    Beads of sweat...worth it or not?
-                </li>
-            </ul>
-        </section>
+        <article className='hotTopics__container'>
+            <HotTopicsText />
+            <HotTopicsImage />
+        </article>
     )
 }

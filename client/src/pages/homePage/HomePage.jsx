@@ -1,6 +1,7 @@
 import React from "react";
 import { useFetchPosts } from "../../hooks/useFetchPosts";
-import HeroHeader from "../../components/heroHeader/HeroHeader";
+import IntroHero from '../../components/introHero/IntroHero';
+import HotTopics from '../../components/hotTopics/HotTopics';
 import Sidebar from "../../components/sidebar/Sidebar";
 import HomePagePosts from "../../components/homePagePosts/HomePagePosts";
 import './HomePage.scss';
@@ -10,7 +11,8 @@ const HomePage = () => {
 
     return (
         <>
-            <HeroHeader />
+            <IntroHero />
+            <HotTopics />
             <section className="homePage__container">
                 {error && <p>{error}</p>}
                 <HomePagePosts
