@@ -1,17 +1,17 @@
 import { Link } from 'react-router-dom';
-import './NavRight.scss';
+import './NavAuth.scss';
 import ProfilePic from '../profilePic/ProfilePic';
 
-export default function NavRight() {
+export default function NavAuth() {
     const user = false;
     return(
-        <div className="navRight__container">
+        <div className="navAuth__container">
             {user ? (
                     <ProfilePic />                 
                 ) : (
                 <>
-                    <Link className='navRight__link' to='/login'>LOGIN</Link>
-                    <Link className='navRight__link' to='./register'>REGISTER</Link>
+                    <Link className='navAuth__link' to='/login'>LOGIN</Link>
+                    <Link className='navAuth__link' to='./register'>REGISTER</Link>
                 </>
             )}
         </div>
