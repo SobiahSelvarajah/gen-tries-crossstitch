@@ -5,7 +5,7 @@ import NavRight from '../navRight/NavRight';
 
 export default function NavBar() {
     return (
-        <nav className='navBar__section'>
+        <nav className='navBar__container'>
             <NavLogo />
             <NavLinks />
             <NavRight />

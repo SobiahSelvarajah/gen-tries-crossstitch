@@ -4,7 +4,7 @@
 @use '../../partials/typeface' as *;
 
 .navBar {
-    &__section {
+    &__container {
         padding: 10px;
         top: 0;
         position: sticky;
