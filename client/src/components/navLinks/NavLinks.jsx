@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import './NavLinks.scss';
 
 export default function NavLinks() {
     const user = false;
@@ -13,6 +12,9 @@ export default function NavLinks() {
             </li>
             <li className='navLinks__element'>
                 <Link to='/stitches' className='navLinks__link'>STITCHES</Link>
+            </li>
+            <li className='navLinks__element'>
+                <Link to='/stitches' className='navLinks__link'>COMMUNITY TAB</Link>
             </li>
             <li className='navLinks__element'>
                 <Link to='/write' className='navLinks__link'>WRITE</Link>

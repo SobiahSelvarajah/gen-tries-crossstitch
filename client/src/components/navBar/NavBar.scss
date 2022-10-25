@@ -5,13 +5,60 @@
 
 .navBar {
     &__container {
-        padding: 10px;
         top: 0;
         position: sticky;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: white;
+        height: 100%;   
+        background-color: white;     
+        display: flex;   
+        flex-direction: column;  
+        margin: 20px 20px 10px 20px;   
+        // padding: 10px;
     }
+    &__top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__links {
+        margin-top: 20px;
+        @include desktop {
+            margin-top: 10px;
+        }
+    }
+}
+.navLinks {
+    &__container {
+        margin-top: 0;
+        padding-left: 10px;
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        @include mobile {
+            display: none;
+        }
+    }
+    &__element {
+        font-family: 'Josefin Sans Regular';
+        font-size: $h3_text_size_m;
+        text-decoration: none;
+        color: $lavender_blues;
+        @include desktop {
+            padding: 10px;
+            font-size: $h3_text_size_dt;  
+        }
+    }
+    &__link {
+        padding: 15px;
+        text-decoration: none;
+        color: $lavender_blues;
+        border-radius: 30px;
+        @include desktop {
+            padding: 20px;            
+        }
+    }
+    &__link:hover {
+        background-color: $bluebell;
+        color: $white;
+        transition: 0.4s;
+    }    
 }
