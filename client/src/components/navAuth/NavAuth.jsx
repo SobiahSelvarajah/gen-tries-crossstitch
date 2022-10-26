@@ -4,7 +4,7 @@ import ProfilePic from '../profilePic/ProfilePic';
 
 export default function NavAuth() {
     const user = false;
-    return(
+    return (
         <div className="navAuth__container">
             {user ? (
                     <ProfilePic />                 

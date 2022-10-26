@@ -4,16 +4,16 @@
 @use '../../partials/typeface' as *;
 
 .navAuth {
-    &__container{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
+    // &__container{
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    //     text-align: center;
+    // }
     &__link {
         padding-right: 10px;
         font-family: 'Josefin Sans Regular';
-        font-size: $h4_text_size_m;
+        font-size: $h5_text_size_m;
         text-decoration: none;
         color: $dark_mint;
         @include tablet {
