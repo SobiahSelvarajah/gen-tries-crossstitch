@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import NavDropdown from '../navDropdown/NavDropdown';
 
 const StyledNavBurger = styled.div`
     display: flex;
     justify-content: space-between;
     flex-flow: column nowrap;
+    width: 2rem;
     height: 1rem;
+    position: fixed;
     z-index: 20;
 
     div {
@@ -24,7 +27,7 @@ const StyledNavBurger = styled.div`
             transform: ${({ open }) => open ? 'translateX(100%)' : 'translate(0)'};
             opacity: ${({ open}) => open ? 0 : 1};
         }
-        
+
         &:nth-child(3) {
             transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};
         }
@@ -44,6 +47,7 @@ const NavBurger = () => {
                 <div />
                 <div />
             </StyledNavBurger>
+            <NavDropdown open={open} />
         </div>
     )
 }
