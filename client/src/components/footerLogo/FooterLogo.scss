@@ -3,11 +3,9 @@
 @use '../../partials/textstyles' as *;
 @use '../../partials/typeface' as *;
 
-.footer {
-    &__container {
-        background-color: $pale_lavender;
-    }
-    &__links {
-        margin: 0;
+.footerLogo {
+    &__logo {
+        margin: 30px;
+        width: 40vw;
     }
 }

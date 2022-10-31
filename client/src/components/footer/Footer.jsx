@@ -1,20 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import transparentLogo from '../../assets/gtc-logo-files/standard-logo-files/black-on-transparent.png';
+// import { Link } from 'react-router-dom';
+import FooterLogo from '../footerLogo/FooterLogo';
 import './Footer.scss';
 
 export default function Footer() {
     return (
         <footer className='footer__container'>
-            <div className="footer__logoSocials">
-                <Link className='footer__logoLink' to='/'>
-                    <img 
-                        className='footer__logo'
-                        src={transparentLogo}
-                        alt='logo'
-                        >
-                    </img>                
-                </Link>                
+            <div className='footer__logoSocials'>
+                <FooterLogo />                
             </div>
             <div className='footer__linksContainer'>
                 <ul className='footer__links'>
