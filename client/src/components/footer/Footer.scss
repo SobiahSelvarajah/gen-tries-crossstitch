@@ -1,0 +1,16 @@
+@use '../../partials/breakpoints' as *;
+@use '../../partials/colors' as *;
+@use '../../partials/textstyles' as *;
+@use '../../partials/typeface' as *;
+
+.footer {
+    &__container {
+        background-color: $pale_lavender;
+    }
+    &__logo {
+        width: 30vw;
+    }
+    &__links {
+        margin: 0;
+    }
+}

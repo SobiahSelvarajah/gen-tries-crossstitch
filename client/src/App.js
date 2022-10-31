@@ -8,6 +8,7 @@ import Login from './pages/login/Login';
 import Write from './pages/write/write';
 import AccountSettings from './pages/accountSettings/AccountSettings';
 import SinglePostPage from './pages/singlePostPage/SinglePostPage';
+import Footer from './components/footer/Footer';
 
 function App() {
   const user = false;
@@ -44,6 +45,7 @@ function App() {
           element={user ? <SinglePostPage/> : <Register/>} 
         />
       </Routes>
+      <Footer />
     </Router>
   )
 }
