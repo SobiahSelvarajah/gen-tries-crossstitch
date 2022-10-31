@@ -1,0 +1,19 @@
+@use '../../partials/breakpoints' as *;
+@use '../../partials/colors' as *;
+@use '../../partials/textstyles' as *;
+@use '../../partials/typeface' as *;
+
+.socials {
+    &__container {
+        display: flex;
+        flex-direction: row;
+        padding-left: 30px;
+    }
+    &__item {
+        list-style: none;
+        padding-right: 10px;
+    }
+    &__image {
+        width: 9vw;
+    }
+}

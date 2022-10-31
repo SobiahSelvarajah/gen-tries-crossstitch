@@ -1,13 +1,15 @@
 import React from 'react';
 // import { Link } from 'react-router-dom';
 import FooterLogo from '../footerLogo/FooterLogo';
+import Socials from '../socials/Socials';
 import './Footer.scss';
 
 export default function Footer() {
     return (
         <footer className='footer__container'>
             <div className='footer__logoSocials'>
-                <FooterLogo />                
+                <FooterLogo />   
+                <Socials />             
             </div>
             <div className='footer__linksContainer'>
                 <ul className='footer__links'>

@@ -1,5 +1,5 @@
 import Categories from '../categories/Categories';
-import InstagramIcon from '../gensInsta/GensInsta';
+// import InstagramIcon from '../gensInsta/GensInsta';
 import './Sidebar.scss';
 
 export default function Sidebar() {
@@ -28,7 +28,7 @@ export default function Sidebar() {
                         <h2 className='sidebar__heading'>
                             FOLLOW ME
                         </h2>
-                        <InstagramIcon />
+                        {/* <InstagramIcon /> */}
                     </div>
                 </section>
             </aside>
