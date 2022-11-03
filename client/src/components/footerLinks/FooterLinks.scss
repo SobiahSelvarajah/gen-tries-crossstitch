@@ -5,7 +5,35 @@
 
 .footerLinks {
     &__container {
-        margin: 30px;
+        margin: 35px;
+        font-family: 'Josefin Sans Regular';
     }
-    
+    &__heading {
+        margin: 0 0 15px 0;
+        font-size: $h2_text_size_m;
+        @include tablet {
+            font-size: $h4_text_size_dt;
+        }
+        @include desktop {
+            font-size: $h2_text_size_dt;
+        }
+    }
+    &__links {
+        margin: 0;
+        list-style: none;
+        @include tablet {
+            padding-left: 0px;
+        }
+    }
+    &__link {
+        margin-top: 20px;
+        font-size: $h3_text_size_m;
+        @include tablet {
+            font-size: $h5_text_size_dt;
+        }
+        @include desktop {
+            margin-top: 30px;
+            font-size: $h4_text_size_dt;
+        }
+    }
 }
