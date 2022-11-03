@@ -10,5 +10,8 @@
         @include tablet{
             width: 15vw;
         }
+        @include desktop {
+            width: 10vw;
+        }
     }
 }

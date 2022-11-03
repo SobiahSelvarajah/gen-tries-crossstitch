@@ -12,8 +12,17 @@
     &__item {
         list-style: none;
         padding-right: 10px;
+        @include desktop {
+            padding-right: 15px;
+        }
     }
     &__image {
         width: 9vw;
+        @include tablet {
+            width: 3vw;
+        }
+        @include desktop {
+            width: 2vw;
+        }
     }
 }
