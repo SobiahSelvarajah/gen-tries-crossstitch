@@ -5,6 +5,11 @@
 
 .footer {
     &__container {
+        display: flex;
+        flex-direction: column;
         background-color: $pale_lavender;
+        @include tablet {
+            flex-direction: row;
+        }
     }
 }

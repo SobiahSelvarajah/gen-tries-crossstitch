@@ -4,10 +4,8 @@
 @use '../../partials/typeface' as *;
 
 .footerLinks {
-    &__links {
-        margin: 0;
+    &__container {
+        margin: 30px;
     }
-    &__link {
-        list-style: none;
-    }
+    
 }

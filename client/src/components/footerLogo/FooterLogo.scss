@@ -7,5 +7,8 @@
     &__logo {
         margin: 30px;
         width: 40vw;
+        @include tablet{
+            width: 15vw;
+        }
     }
 }

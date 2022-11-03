@@ -5,6 +5,9 @@ export default function FooterLinks() {
     return (
         <>
             <div className="footerLinks__container">
+                <h2 className='footerLinks__heading'>
+                    GTC
+                </h2>
                 <ul className="footerLinks__links">
                     <li className="footerLinks__link">
                         Home
@@ -12,16 +15,26 @@ export default function FooterLinks() {
                     <li className="footerLinks__link">
                         About Us
                     </li>
+                </ul>
+            </div>    
+            <div className="footerLinks__container">
+                <h2 className='footerLinks__heading'>
+                    Our Community
+                </h2>
+                <ul className="footerLinks__links">
                     <li className="footerLinks__link">
-                        Gallery
+                        Blogs
+                    </li>
+                    <li className="footerLinks__link">
+                        Community Tab
                     </li>
                 </ul>
             </div>    
             <div className="footerLinks__container">
+                <h2 className='footerLinks__heading'>
+                    Support
+                </h2>
                 <ul className="footerLinks__links">
-                    <li className="footerLinks__link">
-                        Blog
-                    </li>
                     <li className="footerLinks__link">
                         Terms and Rules
                     </li>
@@ -29,7 +42,7 @@ export default function FooterLinks() {
                         Contact Us
                     </li>
                 </ul>
-            </div>    
+            </div>  
         </>
 
         
