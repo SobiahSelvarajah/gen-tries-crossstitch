@@ -16,6 +16,6 @@ export default function AboutGensDescription() {
                 for cross-stitching as well as encouraging 
                 others by posting their own work.
             </p>
-        </div>
+        </div> 
     )
 }

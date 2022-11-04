@@ -6,6 +6,6 @@ export default function AboutGens() {
         <>
             <AboutGensPic />
             {/* AboutGensText */}
-        </>
+        </> 
     )
 }
