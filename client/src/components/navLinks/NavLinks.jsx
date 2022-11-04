@@ -9,6 +9,9 @@ export default function NavLinks() {
                 <Link to='/' className='navLinks__link'>HOME</Link>
             </li>
             <li className='navLinks__element'>
+                <Link to='/aboutus' className='navLinks__link'>ABOUT US</Link>
+            </li>
+            <li className='navLinks__element'>
                 <Link to='/stitches' className='navLinks__link'>STITCHES</Link>
             </li>
             <li className='navLinks__element'>

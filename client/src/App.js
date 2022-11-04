@@ -2,7 +2,7 @@ import React from 'react';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import NavBar from './components/navBar/NavBar';
 import HomePage from './pages/homePage/HomePage';
-
+import AboutUs from './pages/aboutUs/AboutUs';
 import Register from './pages/register/Register';
 import Login from './pages/login/Login';
 import Write from './pages/write/write';
@@ -19,6 +19,10 @@ function App() {
         <Route 
           exact path='/' 
           element={<HomePage/>} 
+        />
+        <Route 
+          path='/aboutus'
+          element={<AboutUs/>}
         />
         <Route 
           path='/register' 
