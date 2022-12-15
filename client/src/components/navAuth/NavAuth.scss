@@ -20,6 +20,9 @@
             font-size: $h4_text_size_dt;
             padding-right: 15px;
         }
+        @include mobile {
+            display: none;
+        }
     }
 }
 .profilePic {
