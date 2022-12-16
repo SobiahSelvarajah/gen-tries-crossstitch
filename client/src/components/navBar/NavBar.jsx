@@ -6,15 +6,15 @@ import NavBurger from '../navBurger/NavBurger';
 
 export default function NavBar() {
     return (
-        <nav className='navBar__container'>
+        <header className='navBar__container'>
             <div className='navBar__top'>
-                <NavLogo />
-                <NavAuth />     
-                <NavBurger />           
+                <NavLogo/>
+                <NavAuth/>     
+                <NavBurger/>
             </div>
             <div className='navBar__links'>
                 <NavLinks />
             </div>
-        </nav>
+        </header>
     )
 } 
