@@ -9,12 +9,12 @@ export default function NavBar() {
         <header className='navBar__container'>
             <div className='navBar__top'>
                 <NavLogo/>
-                <NavAuth/>     
+                <NavAuth/>
                 <NavBurger/>
             </div>
-            <div className='navBar__links'>
+            <nav className='navBar__links'>
                 <NavLinks />
-            </div>
+            </nav>
         </header>
     )
 } 

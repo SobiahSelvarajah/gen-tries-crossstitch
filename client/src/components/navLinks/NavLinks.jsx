@@ -15,7 +15,7 @@ export default function NavLinks() {
                 <Link to='/stitches' className='navLinks__link'>STITCHES</Link>
             </li>
             <li className='navLinks__element'>
-                <Link to='/stitches' className='navLinks__link'>COMMUNITY TAB</Link>
+                <Link to='/community' className='navLinks__link'>COMMUNITY TAB</Link>
             </li>
             <li className='navLinks__element'>
                 <Link to='/write' className='navLinks__link'>WRITE</Link>
