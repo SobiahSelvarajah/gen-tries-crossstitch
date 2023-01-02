@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 import './AboutUsTitle.scss';
 
 export default function AboutUsTitle() {
-    return (
-        <h1 className='aboutUsTitle__heading'>
-            ABOUT US
+    return(
+        <h1 className="aboutUsTitle__heading">
+            About Us
         </h1>
     )
 }

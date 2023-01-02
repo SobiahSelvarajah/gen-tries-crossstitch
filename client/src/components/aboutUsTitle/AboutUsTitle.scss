@@ -5,22 +5,12 @@
 
 .aboutUsTitle {
     &__heading {
-        padding: 30px 0px 30px 20px;
-        background-color: $pale_lavender;
-        font-family: 'Josefin Sans Regular';
-        font-size: $h2_text_size_m;
-        line-height: $h2_line_height_m;
+        font-family: 'Josefin Sans Light Italic';
+        color: $lavender_blues;
+        font-size: $h1_text_size_m;
+        line-height: $h1_line_height_m;
         @include tablet {
-            padding: 40px 0;            
-            text-align: center;
-            width: 35vw;
-            border-top-right-radius: 50px;
-            border-bottom-right-radius: 50px;
-            font-size: $h2_text_size_dt;
-            line-height: $h2_line_height_dt;
-        }
-        @include desktop {
-            width: 25vw;
+            font-size: $h1_line_height_dt;
         }
     }
 }
