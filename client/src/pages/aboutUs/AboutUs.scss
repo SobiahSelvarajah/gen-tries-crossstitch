@@ -3,7 +3,14 @@
 @use '../../partials/textstyles' as *;
 @use '../../partials/typeface' as *;
 
-.socialsGens {
+.aboutGensPic,
+.aboutSobsPic {
+    &__image {
+        width: 40vw;
+    }
+}
+.socialsGens,
+.socialsSobs {
     &__item {
         list-style: none;
     }
