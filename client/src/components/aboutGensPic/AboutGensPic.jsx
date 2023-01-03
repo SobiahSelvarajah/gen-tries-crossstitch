@@ -1,6 +1,6 @@
 import React from "react";
-import gensPic from '../../assets/images/gensPic.jpeg';
-import './AboutGensPic.scss';
+import gensPic from "../../assets/images/gensPic.jpeg";
+import "./AboutGensPic.scss";
 
 export default function AboutGensPic() {
     return(

@@ -3,7 +3,8 @@
 @use '../../partials/textstyles' as *;
 @use '../../partials/typeface' as *;
 
-.aboutGensPic {
+.aboutGensPic,
+.aboutSobsPic {
     &__image {
         width: 40vw;
     }
