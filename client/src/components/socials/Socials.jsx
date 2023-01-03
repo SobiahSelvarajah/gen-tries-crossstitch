@@ -1,7 +1,7 @@
-import React from 'react';
-import instagramLogo from '../../assets/icons/instagram.png';
-import githubLogo from '../../assets/icons/github.png';
-import './Socials.scss';
+import React from "react";
+import instagramLogo from "../../assets/icons/instagram.png";
+import githubLogo from "../../assets/icons/github.png";
+import "./Socials.scss";
 
 export default function Socials() {
     return (
@@ -9,21 +9,19 @@ export default function Socials() {
             <li className='socials__item'>
                 <a className='socials__link' href='https://www.instagram.com/gen_tries_crossstitch/'>
                     <img
-                        className='socials__image'
+                        className='socials__logo'
                         src={instagramLogo}
                         alt='instagram'
-                    >
-                    </img>
+                    />
                 </a>
             </li>
             <li className='socials__item'>
                 <a className='socials__link' href='https://github.com/SobiahSelvarajah/gen-tries-crossstitch'>
                     <img
-                        className='socials__image'
+                        className='socials__logo'
                         src={githubLogo}
                         alt='github'
-                    >
-                    </img>
+                    />
                 </a>
             </li>
         </ul>

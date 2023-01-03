@@ -1,4 +1,5 @@
 import React from "react";
+import SocialsGens from "../socialsGens/SocialsGens";
 import './AboutGensText.scss';
 
 export default function AboutGensText() {
@@ -10,6 +11,7 @@ export default function AboutGensText() {
             <p className="aboutGensText__description">
                 Roses are red, violets are blue, butterflies are pretty and so are you.
             </p>
+            <SocialsGens />
         </section>
     )
 }

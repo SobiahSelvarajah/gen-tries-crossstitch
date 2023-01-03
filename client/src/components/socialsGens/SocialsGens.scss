@@ -1,0 +1,27 @@
+@use '../../partials/breakpoints' as *;
+@use '../../partials/colors' as *;
+@use '../../partials/textstyles' as *;
+@use '../../partials/typeface' as *;
+
+.socialsGens {
+    &__container{
+
+    }
+    &__item {
+        list-style: none;
+    }
+    &__link {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    &__logo {
+        width: 10vw;
+    }
+    &__handle {
+        padding-left: 8px;
+        font-size: $h5_text_size_m;
+        line-height: $h5_line_height_m;
+    }
+}
