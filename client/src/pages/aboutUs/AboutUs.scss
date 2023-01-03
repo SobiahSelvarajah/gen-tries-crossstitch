@@ -9,6 +9,22 @@
         width: 40vw;
     }
 }
+.aboutGensText,
+.aboutSobsText {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Josefin Sans Light';
+    }
+    &__heading {
+        font-size: $h2_text_size_m;
+        line-height: $h2_line_height_m;
+    }
+    &__description {
+        font-size: $h3_text_size_m;
+        line-height: $h3_line_height_m;
+    }
+}
 .socialsGens,
 .socialsSobs {
     &__item {

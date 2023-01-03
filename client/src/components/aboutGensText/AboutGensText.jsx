@@ -1,6 +1,5 @@
 import React from "react";
 import SocialsGens from "../socialsGens/SocialsGens";
-import './AboutGensText.scss';
 
 export default function AboutGensText() {
     return(

@@ -5,7 +5,7 @@ export default function SocialsSobs() {
     return(
         <ul className="socialsSobs__container">
             <li className="socialsSobs__item">
-                <a className="socialsSobs__link" href="">
+                <a className="socialsSobs__link" href="https://www.instagram.com/sobiah11/">
                     <img
                         className="socialsSobs__logo"
                         src={instagramLogo}
