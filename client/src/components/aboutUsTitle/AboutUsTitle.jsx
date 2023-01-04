@@ -1,5 +1,5 @@
 import React from "react";
-import './AboutUsTitle.scss';
+import "./AboutUsTitle.scss";
 
 export default function AboutUsTitle() {
     return(

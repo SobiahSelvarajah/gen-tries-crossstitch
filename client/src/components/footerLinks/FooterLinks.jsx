@@ -1,11 +1,11 @@
-import React from 'react';
-import './FooterLinks.scss';
+import React from "react";
+import "./FooterLinks.scss";
 
 export default function FooterLinks() {
     return (
         <>
             <div className="footerLinks__container">
-                <h2 className='footerLinks__heading'>
+                <h2 className="footerLinks__heading">
                     GTC
                 </h2>
                 <ul className="footerLinks__links">
@@ -18,7 +18,7 @@ export default function FooterLinks() {
                 </ul>
             </div>    
             <div className="footerLinks__container">
-                <h2 className='footerLinks__heading'>
+                <h2 className="footerLinks__heading">
                     Our Community
                 </h2>
                 <ul className="footerLinks__links">
@@ -31,7 +31,7 @@ export default function FooterLinks() {
                 </ul>
             </div>    
             <div className="footerLinks__container">
-                <h2 className='footerLinks__heading'>
+                <h2 className="footerLinks__heading">
                     Support
                 </h2>
                 <ul className="footerLinks__links">
