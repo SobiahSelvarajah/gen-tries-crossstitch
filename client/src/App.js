@@ -5,6 +5,7 @@ import HomePage from './pages/homePage/HomePage';
 import AboutUs from './pages/aboutUs/AboutUs';
 import Register from './pages/register/Register';
 import Login from './pages/login/Login';
+import CommunityTab from './pages/communityTab/CommunityTab';
 import Write from './pages/write/write';
 import AccountSettings from './pages/accountSettings/AccountSettings';
 import SinglePostPage from './pages/singlePostPage/SinglePostPage';
@@ -32,6 +33,10 @@ function App() {
           path='/login' 
           element={user ? <HomePage/> : <Login/>} 
         />   
+        <Route 
+          path='/community'
+          element={<CommunityTab/>}
+        />
         <Route 
           path='/write' 
           element={user ? <Write/> : <Register/>} 
