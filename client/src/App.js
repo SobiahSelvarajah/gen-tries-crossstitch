@@ -9,6 +9,7 @@ import CommunityTab from './pages/communityTab/CommunityTab';
 import Write from './pages/write/write';
 import AccountSettings from './pages/accountSettings/AccountSettings';
 import SinglePostPage from './pages/singlePostPage/SinglePostPage';
+import Terms from './pages/terms/Terms';
 import Footer from './components/footer/Footer';
 
 function App() {
@@ -48,6 +49,10 @@ function App() {
         <Route 
           path='/post/:postId' 
           element={user ? <SinglePostPage/> : <Register/>} 
+        />
+        <Route
+          path='/terms'
+          element={<Terms/>} 
         />
       </Routes>
       <Footer />
